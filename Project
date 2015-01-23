@@ -1,0 +1,27 @@
+Summary:
+
+	Collaborative writing blog--- short stories are written by users of the blog--- users submit the next line of the short story and story is updated every 30 minutes~ with the most upvoted line being added to the story. Story has limit of lines. Every four lines~ there is a picture. 
+
+	
+COMPONENTS:
+
+	POSTING
+
+		Text box (limited number of characters) with post button
+
+		When posted, adds the item to html display
+
+
+	Display of the website
+
+		HTML CSS
+
+		Buttons
+
+		Programemd in a way for infinite/dynamic 
+
+	Interacting with the website
+
+
+
+	Storing of the data on the website
