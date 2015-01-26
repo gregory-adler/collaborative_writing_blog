@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div id="story">
+        {% for story in stories %}
+        <div class="title">{{ story.title }}</div>
+                <ul>
+                    <div class="time">{{ story.date }}</div>
+                    <div class="body">{{ story.body|linebreaks }}</div>
+                </ul>
+        {% endfor %}
+    </div>
+    <div id="submissions">
+        <!-- TODO: Add submissions for each story like you would with comments -->
+    </div>
+
+     <!-- Next/Prev page links  -->
+        {% if stories.object_list and stories.paginator.num_pages > 1 %}
+        <div class="pagination" style="margin-top: 20px; margin-left: -20px; ">
+            <span class="step-links">
+                {% if stories.has_previous %}
+                    <a href= "?page={{ stories.previous_page_number }}">newer entries &lt;&lt; </a>
+                {% endif %}
+
+                <span class="current">
+                    &nbsp;Page {{ stories.number }} of {{ stories.paginator.num_pages }}
+                </span>
+
+                {% if stories.has_next %}
+                    <a href="?page={{ stories.next_page_number }}"> &gt;&gt; older entries</a>
+                {% endif %}
+            </span>
+        </div>
+        {% endif %}
+
+    </div>
+</body>
+</html>
