@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Story(models.Model):
+    title = models.TextField()
     body = models.TextField()
     date = models.DateTimeField()
 
