@@ -2,12 +2,17 @@
 .title{
 	position: relative;
 	font-size: 40px;
-	text-align: center;
-	margin-left: .9em;
+	margin-left: 41%;
 }
 
-.time {
+.title_text {
 	text-align: center;
+	width: 6.5em;
+}
+.time {
+	position: relative;
+	margin-left: 41%;
+	left: 2em;
 }
 
 .time {
@@ -15,7 +20,7 @@
 }
 
 .body {
-	margin-left: 40%;
+	margin-left: 41%;
 	width: 13em;
 	padding-left: .5em;
 	padding-right: .5em;
@@ -26,29 +31,32 @@
 }
 
 .current {
-	text-align: center;
-	margin-left: 3em;
+	position: relative;
+	margin-left: 41%;
 	margin-top: -1em;
+	left: 3.75em;
 }
 
 .newer_entries {
 	position: absolute;
-	left:39.5%;
-	top: 15%;
+	left:41%;
+	margin-left: -1em;
+	top: 7em;
 }
 
 .older_entries {
 	position: absolute;
-	left: 62.25%;
-	top: 15%;
+	left: 41%;
+	margin-left: 16.5em;
+	top: 7em;
 }
 
 .submissions {
 	position: absolute;
 	width: 100%;
-	top: 2%;
+	top: 15em;
 	margin-top: 1em;
-	margin-left: 70%;
+	margin-left: 41%;
 }
 
 .submission_box{
@@ -60,8 +68,9 @@
 }
 
 .submission_title {
-
-	margin-left: 3em;
+	font-size: 12px;
+	margin-left: 5.5em;
+	margin-bottom: -.5em;
 }
 
 
