@@ -39,11 +39,33 @@
 
 .older_entries {
 	position: absolute;
-	left: 62%;
+	left: 62.25%;
 	top: 15%;
 }
 
+.submissions {
+	position: absolute;
+	width: 100%;
+	top: 2%;
+	margin-top: 1em;
+	margin-left: 70%;
+}
+
+.submission_box{
+	position: relative;
+	border: solid;
+	border-width: 1px;
+	width: 17em;
+
+}
+
+.submission_title {
+
+	margin-left: 3em;
+}
+
+
+
 .text {
 	text-align: center;
-	margin-left: 3em;
 }

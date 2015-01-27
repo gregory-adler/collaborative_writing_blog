@@ -19,15 +19,21 @@
                 </ul>
 
         <div id="submissions">
+            <div class= "submissions">
+            <div class= "submission_title"> 
+                <h1> Submissions </h1>
+            </div>
             {% for submission in submissions %}
                 {% ifequal submission.story.title story.title %}
+                 <div class= "submission_box">
                     <div class= "text"> {{submission.text}}</div>
+                  </div>
                 {% endifequal %}
             {% endfor %}
+            </div>
         {% endfor %}
+        </div>
 
-        
-     </div>
     </div>
     
         <!-- TODO: Add submissions for each story like you would with comments -->
