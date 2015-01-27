@@ -1,3 +1,49 @@
-.Submissions{
+
+.title{
+	position: relative;
 	font-size: 40px;
+	text-align: center;
+	margin-left: .9em;
+}
+
+.time {
+	text-align: center;
+}
+
+.time {
+	margin-top: -.5em;
+}
+
+.body {
+	margin-left: 40%;
+	width: 13em;
+	padding-left: .5em;
+	padding-right: .5em;
+	text-align: center;
+	border: solid;
+	border-width: 1px;
+	margin-top: 1em;
+}
+
+.current {
+	text-align: center;
+	margin-left: 3em;
+	margin-top: -1em;
+}
+
+.newer_entries {
+	position: absolute;
+	left:39.5%;
+	top: 15%;
+}
+
+.older_entries {
+	position: absolute;
+	left: 62%;
+	top: 15%;
+}
+
+.text {
+	text-align: center;
+	margin-left: 3em;
 }
