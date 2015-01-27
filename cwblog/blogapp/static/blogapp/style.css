@@ -64,12 +64,13 @@
 	border: solid;
 	border-width: 1px;
 	width: 17em;
+	margin-left: -.5em;
 
 }
 
 .submission_title {
 	font-size: 12px;
-	margin-left: 5.5em;
+	margin-left: 5.35em;
 	margin-bottom: -.5em;
 }
 
