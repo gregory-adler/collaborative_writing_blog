@@ -12,11 +12,20 @@
                     <div class="time">{{ story.date }}</div>
                     <div class="body">{{ story.body|linebreaks }}</div>
                 </ul>
+
+        <div id="submissions">
+            {% for submission in submissions %}
+                {% ifequal submission.story.title story.title %}
+                    <div class= "text"> {{submission.text}}</div>
+                {% endifequal %}
+            {% endfor %}
         {% endfor %}
+
+        
+     </div>
     </div>
-    <div id="submissions">
+    
         <!-- TODO: Add submissions for each story like you would with comments -->
-    </div>
 
      <!-- Next/Prev page links  -->
         {% if stories.object_list and stories.paginator.num_pages > 1 %}
