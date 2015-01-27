@@ -26,7 +26,7 @@
                 <h1> Submissions </h1>
             </div>
             {% for submission in submissions %}
-                {% ifequal submission.story.title story.title %}
+                {% ifequal submission.story.pk story.pk %}
                  <div class= "submission_box">
                     <div class= "text"> {{submission.text}}</div>
                   </div>
@@ -38,7 +38,6 @@
 
     </div>
     
-        <!-- TODO: Add submissions for each story like you would with comments -->
 
      <!-- Next/Prev page links  -->
         {% if stories.object_list and stories.paginator.num_pages > 1 %}
