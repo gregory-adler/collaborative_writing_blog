@@ -5,7 +5,6 @@ from blogapp.models import Story, Submission
 
 
 def main(request):
-    # TODO: Need to get the submissions for each story and display them
     stories = Story.objects.all().order_by('-date')
     submissions = Submission.objects.all()
     paginator = Paginator(stories, 1)
@@ -21,4 +20,7 @@ def main(request):
         stories = paginator.page(paginator.num_pages)
 
     return render(request, 'blogapp/main.html', dict(stories=stories, submissions=submissions))
+
+def liked(request):
+
 
