@@ -30,12 +30,12 @@
                             <div class= "text"> {{submission.text}}</div>
                         </div>
                         <div class="votes">{{ submission.votes }}</div>
-                        <form action="" method="post">
-                        {% csrf_token %}
+                        <form action="" style="display:inline-block;" method="post">
+                            {% csrf_token %}
                             <input id="like" class="like" type="button" value="like">
                         </form>
-                        <form action="" method="post">
-                        {% csrf_token %}
+                        <form action="" style="display:inline-block;" method="post">
+                            {% csrf_token %}
                             <input id="dislike" class="dislike" type="button" value="dislike"/>
                         </form>
                     {% endifequal %}
