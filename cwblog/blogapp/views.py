@@ -21,6 +21,3 @@ def main(request):
 
     return render(request, 'blogapp/main.html', dict(stories=stories, submissions=submissions))
 
-def liked(request):
-
-
