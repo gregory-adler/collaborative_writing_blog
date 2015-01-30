@@ -1,0 +1,1314 @@
+Forbidden (CSRF token missing or incorrect.): /submission
+Internal Server Error: /submission
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/middleware/common.py", line 72, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 619, in is_valid_path
+    resolve(path, urlconf)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 494, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 8, in <module>
+    url(r'^submission/', blogapp.views.post_submission, name= "submission")
+NameError: name 'blogapp' is not defined
+Internal Server Error: /submission
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 35, in post_submission
+    asdfsdaf
+NameError: global name 'asdfsdaf' is not defined
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 35, in post_submission
+    asdfsdaf
+NameError: global name 'asdfsdaf' is not defined
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 31, in post_submission
+    new_submission.text= request.Post
+AttributeError: 'WSGIRequest' object has no attribute 'Post'
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 31, in post_submission
+    new_submission.text= request.POST
+NameError: global name 'new_submission' is not defined
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.save()
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 589, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 617, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 698, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 731, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/query.py", line 921, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/sql/compiler.py", line 920, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/backends/utils.py", line 81, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/backends/sqlite3/base.py", line 485, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: NOT NULL constraint failed: blogapp_submission.story_id
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.story= 1322
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/related.py", line 597, in __set__
+    self.field.rel.to._meta.object_name,
+ValueError: Cannot assign "1322": "Submission.story" must be a "Story" instance.
+Not Found: /submission/
+Not Found: /submission
+Not Found: /submission/
+Not Found: /submission/
+Not Found: /submission/
+Not Found: /submission
+Not Found: /submission/
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 8, in <module>
+    url(r'^submission', include('?P<page_name>[^/]+)$'), views.post_submission, name= "submission")
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/conf/urls/__init__.py", line 28, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: Import by filename is not supported.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 8, in <module>
+    url(r'^submission', include('?P<page_name>[^/]+)$'), views.post_submission, name= "submission")
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/conf/urls/__init__.py", line 28, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: Import by filename is not supported.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 8, in <module>
+    url(r'^submission', include('?P<page_name>[^/]+)$'), views.post_submission, name= "submission")
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/conf/urls/__init__.py", line 28, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: Import by filename is not supported.
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.story= 1322
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/related.py", line 597, in __set__
+    self.field.rel.to._meta.object_name,
+ValueError: Cannot assign "1322": "Submission.story" must be a "Story" instance.
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: post_submission() takes exactly 2 arguments (1 given)
+Internal Server Error: /submission
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/middleware/common.py", line 72, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 619, in is_valid_path
+    resolve(path, urlconf)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 494, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 8, in <module>
+    url(r'^submission/$', include("1"),  views.post_submission, name= "submission")
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/conf/urls/__init__.py", line 28, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named 1
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 8, in <module>
+    url(r'^submission/$', include("1"),  views.post_submission, name= "submission")
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/conf/urls/__init__.py", line 28, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named 1
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 8, in <module>
+    url(r'^submission/$', include("1"),  views.post_submission, name= "submission")
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/conf/urls/__init__.py", line 28, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named 1
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 211, in resolve
+    match = self.regex.search(path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 179, in regex
+    (regex, six.text_type(e)))
+ImproperlyConfigured: "^submission/?P<page>\d+)/$" is not a valid regular expression: unbalanced parenthesis
+Internal Server Error: /submission
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/middleware/common.py", line 72, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 619, in is_valid_path
+    resolve(path, urlconf)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 494, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 6, in <module>
+    from endless_pagination import utils
+ImportError: No module named endless_pagination
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 6, in <module>
+    from endless_pagination import utils
+ImportError: No module named endless_pagination
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 6, in <module>
+    from endless_pagination import utils
+ImportError: No module named endless_pagination
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 30, in post_submission
+    page = utils.get_page_number_from_request(request)
+NameError: global name 'utils' is not defined
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 33, in post_submission
+    new_submission.save()
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 589, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 617, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 698, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 731, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/query.py", line 921, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/sql/compiler.py", line 920, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/backends/utils.py", line 81, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/backends/sqlite3/base.py", line 485, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: NOT NULL constraint failed: blogapp_submission.story_id
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 34, in post_submission
+    new_submission.story= stories.pk(page)
+AttributeError: 'QuerySet' object has no attribute 'pk'
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 34, in post_submission
+    new_submission.story= stories.objects.get(pk=page)
+AttributeError: 'QuerySet' object has no attribute 'objects'
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 34, in post_submission
+    new_submission.story= stories.objects.get(pk=page)
+AttributeError: 'QuerySet' object has no attribute 'objects'
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 33, in post_submission
+    new_submission.story= Story.objects.get(pk=page)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/query.py", line 357, in get
+    self.model._meta.object_name)
+DoesNotExist: Story matching query does not exist.
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 33, in post_submission
+    new_submission.story= Story.objects.get(pk=page)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/query.py", line 357, in get
+    self.model._meta.object_name)
+DoesNotExist: Story matching query does not exist.
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 34, in post_submission
+    new_submission.save()
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 589, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 617, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 698, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 731, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/query.py", line 921, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/sql/compiler.py", line 920, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/backends/utils.py", line 81, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/backends/sqlite3/base.py", line 485, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: NOT NULL constraint failed: blogapp_submission.date
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 34, in post_submission
+    new_submission.save()
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 589, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 617, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 698, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 731, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/query.py", line 921, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/sql/compiler.py", line 920, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/backends/utils.py", line 81, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/backends/sqlite3/base.py", line 485, in execute
+    return Database.Cursor.execute(self, query, params)
+IntegrityError: NOT NULL constraint failed: blogapp_submission.date
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 34, in post_submission
+    new_submission.date=  models.DateTimeField()
+NameError: global name 'models' is not defined
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 34, in post_submission
+    new_submission.date=  models.DateTimeField()
+NameError: global name 'models' is not defined
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 35, in post_submission
+    new_submission.save()
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 589, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 617, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 698, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 731, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/query.py", line 921, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/sql/compiler.py", line 919, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/sql/compiler.py", line 877, in as_sql
+    for obj in self.query.objs
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 627, in get_db_prep_save
+    prepared=False)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1290, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1269, in get_prep_value
+    value = super(DateTimeField, self).get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1171, in get_prep_value
+    return self.to_python(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1228, in to_python
+    parsed = parse_datetime(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/dateparse.py", line 70, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or buffer
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 35, in post_submission
+    new_submission.save()
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 589, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 617, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 698, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 731, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/query.py", line 921, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/sql/compiler.py", line 919, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/sql/compiler.py", line 877, in as_sql
+    for obj in self.query.objs
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 627, in get_db_prep_save
+    prepared=False)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1290, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1269, in get_prep_value
+    value = super(DateTimeField, self).get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1171, in get_prep_value
+    return self.to_python(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1228, in to_python
+    parsed = parse_datetime(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/dateparse.py", line 70, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or buffer
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 35, in post_submission
+    new_submission.save()
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 589, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 617, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 698, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 731, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/query.py", line 921, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/sql/compiler.py", line 919, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/sql/compiler.py", line 877, in as_sql
+    for obj in self.query.objs
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 627, in get_db_prep_save
+    prepared=False)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1290, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1269, in get_prep_value
+    value = super(DateTimeField, self).get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1171, in get_prep_value
+    return self.to_python(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1228, in to_python
+    parsed = parse_datetime(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/dateparse.py", line 70, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or buffer
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 35, in post_submission
+    new_submission.save()
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 589, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 617, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 698, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 731, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/query.py", line 921, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/sql/compiler.py", line 919, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/sql/compiler.py", line 877, in as_sql
+    for obj in self.query.objs
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 627, in get_db_prep_save
+    prepared=False)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1290, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1269, in get_prep_value
+    value = super(DateTimeField, self).get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1171, in get_prep_value
+    return self.to_python(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1252, in to_python
+    params={'value': value},
+ValidationError: [u"'test' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 35, in post_submission
+    new_submission.save()
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 589, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 617, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 698, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 731, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/query.py", line 921, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/sql/compiler.py", line 919, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/sql/compiler.py", line 877, in as_sql
+    for obj in self.query.objs
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 627, in get_db_prep_save
+    prepared=False)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1290, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1269, in get_prep_value
+    value = super(DateTimeField, self).get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1171, in get_prep_value
+    return self.to_python(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1252, in to_python
+    params={'value': value},
+ValidationError: [u"'test' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 35, in post_submission
+    new_submission.save()
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 589, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 617, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 698, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 731, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/query.py", line 921, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/sql/compiler.py", line 919, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/sql/compiler.py", line 877, in as_sql
+    for obj in self.query.objs
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 627, in get_db_prep_save
+    prepared=False)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1290, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1269, in get_prep_value
+    value = super(DateTimeField, self).get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1171, in get_prep_value
+    return self.to_python(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1252, in to_python
+    params={'value': value},
+ValidationError: [u"'test' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 35, in post_submission
+    new_submission.save()
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 589, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 617, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 698, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/base.py", line 731, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/query.py", line 921, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/sql/compiler.py", line 919, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/sql/compiler.py", line 877, in as_sql
+    for obj in self.query.objs
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 627, in get_db_prep_save
+    prepared=False)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1290, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1269, in get_prep_value
+    value = super(DateTimeField, self).get_prep_value(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1171, in get_prep_value
+    return self.to_python(value)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/db/models/fields/__init__.py", line 1252, in to_python
+    params={'value': value},
+ValidationError: [u"'test' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 34, in post_submission
+    new_submission.date=  datetime.strptime(request.POST['date'], '%d-%m-%Y')
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'date'"
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 37, in post_submission
+    return render(request, 'blogapp/main.html', dict(stories=stories, submissions=submissions))
+NameError: global name 'stories' is not defined
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 37, in post_submission
+    return render(request, 'blogapp/main.html', dict(stories=stories, submissions=submissions))
+NameError: global name 'stories' is not defined
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= (request.POST.text)
+AttributeError: 'QueryDict' object has no attribute 'text'
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= (request.POST.text)
+AttributeError: 'QueryDict' object has no attribute 'text'
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= request.text
+AttributeError: 'WSGIRequest' object has no attribute 'text'
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= request.POST['text']
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'text'"
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= request.POST['text']
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'text'"
+Not Found: /submissionr
+Not Found: /submissionr
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= request.submission
+AttributeError: 'WSGIRequest' object has no attribute 'submission'
+Internal Server Error: /submission
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/middleware/common.py", line 82, in process_request
+    "settings.") % (new_url[0], new_url[1]))
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/submission/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= request.submission
+AttributeError: 'WSGIRequest' object has no attribute 'submission'
+Internal Server Error: /submission
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/middleware/common.py", line 82, in process_request
+    "settings.") % (new_url[0], new_url[1]))
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/submission/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= request.submission
+AttributeError: 'WSGIRequest' object has no attribute 'submission'
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= request.submission
+AttributeError: 'WSGIRequest' object has no attribute 'submission'
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= request.post("submission")
+AttributeError: 'WSGIRequest' object has no attribute 'post'
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= request.post("submission")
+AttributeError: 'WSGIRequest' object has no attribute 'post'
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= request.POST("submission")
+TypeError: 'QueryDict' object is not callable
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= request.POST("submission")
+TypeError: 'QueryDict' object is not callable
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= request.POST("submission")
+TypeError: 'QueryDict' object is not callable
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= request.POST["submission"]
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'submission'"
+Not Found: /submission/submission/
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= request.POST["submission"]
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'submission'"
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= request.POST["submission"]
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'submission'"
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 43
+    THis is the way that i type
+                  ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 43
+    THis is the way that i type
+                  ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 43
+    THis is the way that i type
+                  ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 43
+    THis is the way that i type
+                  ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 43
+    THis is the way that i type
+                  ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 43
+    THis is the way that i type
+                  ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 43
+    THis is the way that i type
+                  ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 43
+    THis is the way that i type
+                  ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 43
+    THis is the way that i type
+                  ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 43
+    THis is the way that i type
+                  ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 25, in main
+    redirect(request, 'blogapp/main.html', dict(stories=stories, submissions=submissions))
+NameError: global name 'redirect' is not defined
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 25, in main
+    redirect(request, 'blogapp/main.html', dict(stories=stories, submissions=submissions))
+NameError: global name 'redirect' is not defined
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 6, in <module>
+    from django import redirect
+ImportError: cannot import name redirect
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 41, in post_submission
+    redirect(request, 'blogapp/main.html', dict(stories=stories, submissions=submissions))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 76, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 165, in resolve_url
+    return urlresolvers.reverse(to, args=args, kwargs=kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for '<WSGIRequest
+path:/submission/,
+GET:<QueryDict: {}>,
+POST:<QueryDict: {u'csrfmiddlewaretoken': [u'LoAK90agdzyl1VAwg4qjTsh1KJb0QGvb'], u'submission': [u'The']}>,
+COOKIES:{'csrftoken': 'LoAK90agdzyl1VAwg4qjTsh1KJb0QGvb'},
+META:{'Apple_PubSub_Socket_Render': '/private/tmp/com.apple.launchd.ZkIDlD8cP3/Render',
+ 'CONTENT_LENGTH': '67',
+ 'CONTENT_TYPE': 'application/x-www-form-urlencoded',
+ u'CSRF_COOKIE': u'LoAK90agdzyl1VAwg4qjTsh1KJb0QGvb',
+ 'DISPLAY': '/private/tmp/com.apple.launchd.fSQlqrNDn0/org.macosforge.xquartz:0',
+ 'DJANGO_SETTINGS_MODULE': 'cwblog.settings',
+ 'GATEWAY_INTERFACE': 'CGI/1.1',
+ 'HOME': '/Users/Gregory',
+ 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate',
+ 'HTTP_ACCEPT_LANGUAGE': 'en-us',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_COOKIE': 'csrftoken=LoAK90agdzyl1VAwg4qjTsh1KJb0QGvb',
+ 'HTTP_HOST': '127.0.0.1:8000',
+ 'HTTP_ORIGIN': 'http://127.0.0.1:8000',
+ 'HTTP_REFERER': 'http://127.0.0.1:8000/',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.1.25 (KHTML, like Gecko) Version/8.0 Safari/600.1.25',
+ 'LANG': 'en_US.UTF-8',
+ 'LOGNAME': 'Gregory',
+ 'OLDPWD': '/Users/Gregory/GitHub/collaborative_writing_blog',
+ 'PATH': '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin',
+ 'PATH_INFO': u'/submission/',
+ 'PWD': '/Users/Gregory/GitHub/collaborative_writing_blog/cwblog',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '127.0.0.1',
+ 'REMOTE_HOST': '',
+ 'REQUEST_METHOD': 'POST',
+ 'RUN_MAIN': 'true',
+ 'SCRIPT_NAME': u'',
+ 'SERVER_NAME': '1.0.0.127.in-addr.arpa',
+ 'SERVER_PORT': '8000',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'WSGIServer/0.1 Python/2.7.6',
+ 'SHELL': '/bin/bash',
+ 'SHLVL': '1',
+ 'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.HTaI6WNH7V/Listeners',
+ 'TERM': 'xterm-256color',
+ 'TERM_PROGRAM': 'Apple_Terminal',
+ 'TERM_PROGRAM_VERSION': '343',
+ 'TERM_SESSION_ID': 'CC99FEC3-7763-4C79-9908-174810E3F818',
+ 'TMPDIR': '/var/folders/3r/_lzqbfvn3xqghbfv3q8hg5fh0000gn/T/',
+ 'TZ': 'UTC',
+ 'USER': 'Gregory',
+ 'VERSIONER_PYTHON_PREFER_32_BIT': 'no',
+ 'VERSIONER_PYTHON_VERSION': '2.7',
+ 'XPC_FLAGS': '0x0',
+ 'XPC_SERVICE_NAME': '0',
+ '_': '/usr/bin/python',
+ '__CF_USER_TEXT_ENCODING': '0x1F5:0x0:0x0',
+ 'wsgi.errors': <open file '<stderr>', mode 'w' at 0x1089391e0>,
+ 'wsgi.file_wrapper': <class wsgiref.util.FileWrapper at 0x10960e0b8>,
+ 'wsgi.input': <socket._fileobject object at 0x10b0397d0>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}>' with arguments '('blogapp/main.html', {'submissions': [<Submission: Why did the chicken cross the road?>, <Submission: To get to the other side>, <Submission: <QueryDict: {}>>, <Submission: <QueryDict: {u'csrfmiddlewaretoken': [u'LoAK90agdzyl1VAwg4qjTsh1KJb0QGvb']}>>, <Submission: <QueryDict: {}>>, <Submission: <QueryDict: {u'csrfmiddlewaretoken': [u'LoAK90agdzyl1VAwg4qjTsh1KJb0QGvb']}>>, <Submission: <QueryDict: {u'csrfmiddlewaretoken': [u'LoAK90agdzyl1VAwg4qjTsh1KJb0QGvb']}>>, <Submission: <QueryDict: {u'csrfmiddlewaretoken': [u'LoAK90agdzyl1VAwg4qjTsh1KJb0QGvb']}>>, <Submission: <QueryDict: {u'csrfmiddlewaretoken': [u'LoAK90agdzyl1VAwg4qjTsh1KJb0QGvb']}>>, <Submission: <QueryDict: {u'csrfmiddlewaretoken': [u'LoAK90agdzyl1VAwg4qjTsh1KJb0QGvb']}>>, <Submission: <QueryDict: {}>>, <Submission: <QueryDict: {}>>, <Submission: <QueryDict: {}>>, <Submission: <QueryDict: {}>>, <Submission: <QueryDict: {}>>, <Submission: <QueryDict: {}>>, <Submission: <QueryDict: {u'csrfmiddlewaretoken': [u'LoAK90agdzyl1VAwg4qjTsh1KJb0QGvb']}>>, <Submission: <QueryDict: {u'csrfmiddlewaretoken': [u'LoAK90agdzyl1VAwg4qjTsh1KJb0QGvb']}>>, <Submission: <QueryDict: {}>>, <Submission: <QueryDict: {u'csrfmiddlewaretoken': [u'LoAK90agdzyl1VAwg4qjTsh1KJb0QGvb']}>>, '...(remaining elements truncated)...'], 'stories': [<Story: Test Title>, <Story: Test 2>]})' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= request.POST["submission"]
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'submission'"
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 40
+    redirect(request, 'r'^$', views.main', dict(stories=stories, submissions=submissions))
+                          ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 40
+    redirect(request, 'r'^$', views.main', dict(stories=stories, submissions=submissions))
+                          ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 40
+    redirect(views.main))
+                        ^
+SyntaxError: invalid syntax
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 40, in post_submission
+    redirect(r'^$')
+NameError: global name 'redirect' is not defined
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 32, in post_submission
+    new_submission.text= request.POST["submission"]
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'submission'"
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 40, in post_submission
+    return redirect('blogapp/main.html', dict(stories=stories, submissions=submissions))
+NameError: global name 'redirect' is not defined
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 40
+    return redirect(main))
+                         ^
+SyntaxError: invalid syntax
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 40
+    return redirect(main))
+                         ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 40
+    return redirect(main))
+                         ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 40
+    return redirect(main))
+                         ^
+SyntaxError: invalid syntax
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 40, in post_submission
+    return redirect(main)
+NameError: global name 'redirect' is not defined
