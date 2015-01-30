@@ -29,11 +29,15 @@ def main(request):
 def post_submission(request):
 
     page = request.GET.get('page')
-    new_submission = Submission() 
-    new_submission.text= request.POST["submission"]
-    new_submission.story= Story.objects.get(pk=1)
-    new_submission.date=  datetime.now()
-    new_submission.save()
+
+    if request.POST["submission"]== "":
+        pass
+    else:
+        new_submission = Submission() 
+        new_submission.text= request.POST["submission"]
+        new_submission.story= Story.objects.get(pk=1)
+        new_submission.date=  datetime.now()
+        new_submission.save()
 
     stories = Story.objects.all().order_by('-date')
     submissions = Submission.objects.all()

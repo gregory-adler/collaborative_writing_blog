@@ -1437,3 +1437,100 @@ Traceback (most recent call last):
   File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 31, in post_submission
     page = int(request.GET.get('page'))
 TypeError: int() argument must be a string or a number, not 'NoneType'
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 211, in resolve
+    match = self.regex.search(path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 179, in regex
+    (regex, six.text_type(e)))
+ImproperlyConfigured: "^submission/?P<page_name>[^/]+)/$" is not a valid regular expression: unbalanced parenthesis
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 211, in resolve
+    match = self.regex.search(path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 179, in regex
+    (regex, six.text_type(e)))
+ImproperlyConfigured: "^submission/?P<page_name>[^/])$" is not a valid regular expression: unbalanced parenthesis
+Not Found: /submission/
+Not Found: /submission/
+Not Found: /submission/
+Not Found: /submission/
+Not Found: /submission/
+Not Found: /submission/
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 345, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 211, in resolve
+    match = self.regex.search(path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 179, in regex
+    (regex, six.text_type(e)))
+ImproperlyConfigured: "^submission/?(P<page_name>/$" is not a valid regular expression: unbalanced parenthesis
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: post_submission() takes exactly 2 arguments (1 given)
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: post_submission() takes exactly 2 arguments (1 given)
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: post_submission() takes exactly 2 arguments (1 given)
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 33, in post_submission
+    new_submission.text= request.POST["submission"]
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'submission'"
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 33, in post_submission
+    new_submission.text= request.POST["submission"]
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'submission'"
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 33, in post_submission
+    new_submission.text= request.POST["submission"]
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'submission'"
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 33, in post_submission
+    if request.POST("submission")== "":
+TypeError: 'QueryDict' object is not callable
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 33, in post_submission
+    if request.POST["submission"]== "":
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'submission'"
