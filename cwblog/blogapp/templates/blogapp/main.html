@@ -30,13 +30,13 @@
                             <div class= "text"> {{submission.text}}</div>
                         </div>
                         <div class="votes">{{ submission.votes }}</div>
-                        <form action="" style="display:inline-block;" method="post">
+                        <form action="{{ stories.number }}/submission/{{ submission.pk }}/like/" style="display:inline-block;" method="post">
                             {% csrf_token %}
-                            <input id="like" class="like" type="button" value="like">
+                            <input id="like" class="like" type="submit" value="like">
                         </form>
-                        <form action="" style="display:inline-block;" method="post">
+                        <form action="{{ stories.number }}/submission/{{ submission.pk }}/dislike/" style="display:inline-block;" method="post">
                             {% csrf_token %}
-                            <input id="dislike" class="dislike" type="button" value="dislike"/>
+                            <input id="dislike" class="dislike" type="submit" value="dislike"/>
                         </form>
                     {% endifequal %}
                 {% endfor %}
@@ -44,7 +44,7 @@
         {% endfor %}
 
 
-<form action='{{ story }}/submission' method='post'>{% csrf_token %}
+<form action='{{ stories.number }}/submission/' method='post'>{% csrf_token %}
 <p> Add Entry: <input type= "text" name="submission">
 <input type='submit' value='Submit' />
 </form>

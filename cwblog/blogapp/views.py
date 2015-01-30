@@ -14,12 +14,6 @@ def main(request, page):
     paginator = Paginator(stories, 1)
 
     try:
-        page = page
-        #page = int(request.GET.get("page", '1'))
-    except ValueError:
-        page = 1
-
-    try:
         stories = paginator.page(page)
     except (InvalidPage, EmptyPage):
         stories = paginator.page(paginator.num_pages)
@@ -43,6 +37,17 @@ def post_submission(request, page):
     stories = Story.objects.all().order_by('-date')
     submissions = Submission.objects.all()
 
-    return redirect(main)
- 
-    
+    return redirect(main, page)
+
+
+def like_button(request, page, submission_id):
+    submission = Submission.objects.get(pk=submission_id)
+    submission.votes=submission.votes+1
+    submission.save()
+    return(redirect(main, page))
+
+def dislike_button(request, page, submission_id):
+    submission = Submission.objects.get(pk=submission_id)
+    submission.votes=submission.votes-1
+    submission.save()
+    return(redirect(main, page))
