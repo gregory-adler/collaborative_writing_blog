@@ -1312,3 +1312,128 @@ Traceback (most recent call last):
   File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 40, in post_submission
     return redirect(main)
 NameError: global name 'redirect' is not defined
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 35, in post_submission
+    if page== null:
+NameError: global name 'null' is not defined
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 33, in post_submission
+    new_submission.text= request.POST["submission"]
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'submission'"
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 33, in post_submission
+    new_submission.text= request.POST["submission"]
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'submission'"
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 35, in post_submission
+    if page== none:
+NameError: global name 'none' is not defined
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 33, in post_submission
+    new_submission.text= request.POST["submission"]
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'submission'"
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 33, in post_submission
+    new_submission.text= request.POST["submission"]
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'submission'"
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 31
+    page = request.GET.('page')
+                       ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 31
+    page = request.GET.('page')
+                       ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 31
+    page = request.GET.('page')
+                       ^
+SyntaxError: invalid syntax
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 31, in post_submission
+    page = request.GET('page')
+TypeError: 'QueryDict' object is not callable
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 31, in post_submission
+    page = int(request.GET.get('page'))
+TypeError: int() argument must be a string or a number, not 'NoneType'
+Internal Server Error: /submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 31, in post_submission
+    page = int(request.GET.get('page'))
+TypeError: int() argument must be a string or a number, not 'NoneType'
