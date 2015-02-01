@@ -1534,3 +1534,83 @@ Traceback (most recent call last):
   File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
     raise MultiValueDictKeyError(repr(key))
 MultiValueDictKeyError: "'submission'"
+Internal Server Error: /1/submission/60/like/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 48, in like_button
+    add_to_story(sunmission)
+NameError: global name 'sunmission' is not defined
+Internal Server Error: /1/submission/60/like/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 48, in like_button
+    add_to_story(submission)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 58, in add_to_story
+    submission.story.text.append(submission.text)
+AttributeError: 'Story' object has no attribute 'text'
+Internal Server Error: /1/submission/60/like/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 48, in like_button
+    add_to_story(submission)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 58, in add_to_story
+    submission.story.text.append(submission.text)
+AttributeError: 'Story' object has no attribute 'text'
+Internal Server Error: /1/submission/60/like/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 48, in like_button
+    add_to_story(submission)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 58, in add_to_story
+    submission.story.body.append(submission.text)
+AttributeError: 'unicode' object has no attribute 'append'
+Internal Server Error: /1/submission/60/like/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 48, in like_button
+    add_to_story(submission)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 58, in add_to_story
+    submission.story.body.append(submission.text)
+AttributeError: 'unicode' object has no attribute 'append'
+Internal Server Error: /1/submission/60/like/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 48, in like_button
+    add_to_story(submission)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 59, in add_to_story
+    submisison.story.save()
+NameError: global name 'submisison' is not defined
+Internal Server Error: /1/submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 28, in post_submission
+    if request.POST["submission"]== "":
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'submission'"
+Internal Server Error: /1/submission/60/like/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 48, in like_button
+    add_to_story(submission)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 59, in add_to_story
+    submisison.story.save()
+NameError: global name 'submisison' is not defined
+Internal Server Error: /1/submission/60/like/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 48, in like_button
+    add_to_story(submission)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 59, in add_to_story
+    submisison.story.save()
+NameError: global name 'submisison' is not defined
+Not Found: /favicon.ico

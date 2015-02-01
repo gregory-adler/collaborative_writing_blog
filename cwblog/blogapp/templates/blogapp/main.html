@@ -20,6 +20,21 @@
                     <div class="body">{{ story.body|linebreaks }}</div>
                 </ul>
 
+
+             <span class="current">
+                <div class= "current"> 
+                &nbsp;{{ stories.number }} of {{ stories.paginator.num_pages }}
+                </div>
+            </span>
+
+
+            <div class= "add_submission">
+            <form action='{{ stories.number }}/submission/' method='post'>{% csrf_token %}
+            <p> Add Entry: <input type= "text" name="submission">
+            <input type='submit' value='Submit' />
+            </form>
+            </div>
+
             <div class= "submissions">
                 <div class= "submission_title">
                     <h1> Submissions </h1>
@@ -44,10 +59,7 @@
         {% endfor %}
 
 
-<form action='{{ stories.number }}/submission/' method='post'>{% csrf_token %}
-<p> Add Entry: <input type= "text" name="submission">
-<input type='submit' value='Submit' />
-</form>
+
 
     
 
@@ -60,12 +72,6 @@
                     <a href= "{{ stories.previous_page_number }}"> &lt;&lt; </a>
                     </div>
                 {% endif %}
-
-                <span class="current">
-                    <div class= "current"> 
-                    &nbsp;{{ stories.number }} of {{ stories.paginator.num_pages }}
-                    </div>
-                </span>
 
                 {% if stories.has_next %}
                     <div class= "older_entries">
