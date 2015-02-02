@@ -72,6 +72,7 @@ class Register(CreateView):
     form_class = UserCreationForm
     model = User
     template_name = 'blogapp/register.html'
+    success_url = '/'
 
 
 # class Login(AuthenticationForm):
