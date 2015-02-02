@@ -3,6 +3,12 @@ from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from django.utils import timezone
 from blogapp.models import Story, Submission
 from django.shortcuts import redirect
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
+from django.views.generic.edit import CreateView
+from django.http import HttpResponseForbidden
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.forms import AuthenticationForm
 
 
 def home(request):
@@ -25,8 +31,6 @@ def main(request, page):
 
 def post_submission(request, page):
 
-    # page = (int) page
-
     if request.POST["submission"]== "":
         pass
     else:
@@ -35,9 +39,6 @@ def post_submission(request, page):
         new_submission.story = Story.objects.get(pk=page)
         new_submission.date = timezone.now()
         new_submission.save()
-
-    # stories = Story.objects.all().order_by('-date')
-    # submissions = Submission.objects.all()
 
     return redirect(main, page)
 
@@ -65,3 +66,37 @@ def add_to_story(submission):
     submission.story.body = submission.story.body + '\n' + submission.text
     submission.story.save()
     submission.delete()
+
+
+class Register(CreateView):
+    form_class = UserCreationForm
+    model = User
+    template_name = 'blogapp/register.html'
+
+
+# class Login(AuthenticationForm):
+#
+#     def form_valid(self, form):
+#         username = form.cleaned_data['username']
+#         password = form.cleaned_data['password']
+#         user = authenticate(username=username, password=password)
+#
+#         if user is not None and user.is_active:
+#             login(self.request, user)
+#             return super(Register, self).form_valid(form)
+#         else:
+#             return self.form_invalid(form)
+
+
+def login_page(request):
+
+   return render(request, 'blogapp/login.html', dict())
+
+
+def register_user(request):
+
+    return HttpResponseForbidden()
+
+def logout(request):
+
+    return redirect(home)
