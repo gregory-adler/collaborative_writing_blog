@@ -10,6 +10,9 @@
     <title></title>
 </head>
 <body>
+    <a href="{% url 'login' %}">login</a>
+    <a href="{% url 'trylogout' %}">logout</a>
+    <a href="{% url 'register' %}">register</a>
     <div id="story">
         {% for story in stories %}
             <div class="title">
