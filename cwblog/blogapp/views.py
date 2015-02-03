@@ -56,8 +56,8 @@ def like_button(request, page, submission_id):
 
 def dislike_button(request, page, submission_id):
     submission = Submission.objects.get(pk=submission_id)
-    if submission.votes <= 0:
-        pass
+    if submission.votes ==-4:
+        submissin.delete()
     else:
         submission.votes -= 1
         submission.save()
@@ -67,6 +67,16 @@ def dislike_button(request, page, submission_id):
 def add_to_story(submission):
     submission.story.body = submission.story.body + '\n' + submission.text
     submission.story.save()
+    submissions = Submission.objects.all()
+
+    for i in submissions:
+        if i== submission:
+            pass
+        else:
+            if i.story== submission.story:
+                i.delete()
+    
+
     submission.delete()
 
 
