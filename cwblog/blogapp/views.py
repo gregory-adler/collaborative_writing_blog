@@ -1,14 +1,13 @@
-from django.http import HttpResponseRedirect, HttpResponse
-
-from django.shortcuts import render, render_to_response
+from django.contrib.auth.decorators import login_required
+from django.http import HttpResponse
+from django.shortcuts import render
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
-from django.template import RequestContext
 from django.utils import timezone
 from django.shortcuts import redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.views.generic.edit import CreateView
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 
 from blogapp.models import Story, Submission
 
@@ -30,7 +29,7 @@ def main(request, page):
 
     return render(request, 'blogapp/main.html', dict(stories=stories, submissions=submissions))
 
-
+@login_required
 def post_submission(request, page):
 
     if request.POST["submission"]== "":
@@ -45,6 +44,7 @@ def post_submission(request, page):
     return redirect(main, page)
 
 
+@login_required
 def like_button(request, page, submission_id):
     submission = Submission.objects.get(pk=submission_id)
     submission.votes += 1
@@ -54,6 +54,7 @@ def like_button(request, page, submission_id):
     return redirect(main, page)
 
 
+@login_required
 def dislike_button(request, page, submission_id):
     submission = Submission.objects.get(pk=submission_id)
     if submission.votes ==-4:
@@ -84,50 +85,28 @@ class RegisterView(CreateView):
     form_class = UserCreationForm
     model = User
     template_name = 'blogapp/register.html'
-    success_url = '/'
+    success_url = '/login/'
 
 
-def login(request):
-    context = RequestContext(request)
+def login_page(request):
+    return render(request, 'blogapp/login.html', {})
 
-    # If the request is a HTTP POST, try to pull out the relevant information.
-    if request.method == 'POST':
-        # Gather the username and password provided by the user.
-        # This information is obtained from the login form.
-        username = request.POST['username']
-        password = request.POST['password']
 
-        # Use Django's machinery to attempt to see if the username/password
-        # combination is valid - a User object is returned if it is.
-        user = authenticate(username=username, password=password)
-
-        # If we have a User object, the details are correct.
-        # If None (Python's way of representing the absence of a value), no user
-        # with matching credentials was found.
-        if user:
-            # Is the account active? It could have been disabled.
-            if user.is_active:
-                # If the account is valid and active, we can log the user in.
-                # We'll send the user back to the homepage.
-                login(request, user)
-                return HttpResponseRedirect('/')
-            else:
-                # An inactive account was used - no logging in!
-                return HttpResponse("Your account is disabled.")
+def try_login(request):
+    username = request.POST['username']
+    password = request.POST['password']
+    user = authenticate(username=username, password=password)
+    if user:
+        if user.is_active:
+            login(request, user)
+            return redirect(home)
         else:
-            # Bad login details were provided. So we can't log the user in.
-            # print "Invalid login details: {0}, {1}".format(username, password)
-            return HttpResponse("Invalid login details supplied.")
-
-    # The request is not a HTTP POST, so display the login form.
-    # This scenario would most likely be a HTTP GET.
+            return HttpResponse("Your account is disabled.")
     else:
-        # No context variables to pass to the template system, hence the
-        # blank dictionary object...
-        return render_to_response('blogapp/login.html', {}, context)
+        return HttpResponse("Invalid login details supplied.")
 
 
-
-def logout(request):
-
+@login_required
+def try_logout(request):
+    logout(request)
     return redirect(home)
