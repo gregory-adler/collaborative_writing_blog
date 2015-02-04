@@ -106,7 +106,6 @@ def register(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
             new_user = form.save()
-            messages.success(request, "Thanks for registering %s! You are now logged in." % request.POST.get('username'))
             new_user = authenticate(username=request.POST.get('username'),
                                     password=request.POST.get('password1'))
             login(request, new_user)
@@ -117,7 +116,7 @@ def register(request):
 
 
 def login_page(request):
-    return render(request, 'blogapp/login.html', {})
+    return render(request, 'blogapp/login.html', dict(messages=messages.get_messages(request)))
 
 
 def try_login(request):
@@ -129,9 +128,11 @@ def try_login(request):
             login(request, user)
             return redirect(home)
         else:
-            return HttpResponse("Your account is disabled.")
+            messages.error(request,"Your account has been disabled.")
+            return redirect(login_page)
     else:
-        return HttpResponse("Invalid login details supplied.")
+            messages.error(request,"Invalid login details supplied.")
+            return redirect(login_page)
 
 
 @login_required()
