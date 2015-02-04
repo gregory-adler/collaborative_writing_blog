@@ -2630,3 +2630,4 @@ Traceback (most recent call last):
   File "C:\Python34\Lib\site-packages\django\db\backends\sqlite3\base.py", line 485, in execute
     return Database.Cursor.execute(self, query, params)
 django.db.utils.OperationalError: no such table: blogapp_submission_voted_on
+Not Found: /favicon.ico
