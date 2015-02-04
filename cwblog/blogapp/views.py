@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -5,8 +6,6 @@ from django.core.paginator import Paginator, InvalidPage, EmptyPage
 from django.utils import timezone
 from django.shortcuts import redirect
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.models import User
-from django.views.generic.edit import CreateView
 from django.contrib.auth import authenticate, login, logout
 
 from blogapp.models import Story, Submission
@@ -101,11 +100,19 @@ def new_story(request):
     return render(request, 'blogapp/new_story.html')
 
 
-class RegisterView(CreateView):
-    form_class = UserCreationForm
-    model = User
-    template_name = 'blogapp/register.html'
-    success_url = '/login/'
+def register(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            new_user = form.save()
+            messages.info(request, "Thanks for registering. You are now logged in.")
+            new_user = authenticate(username=request.POST.get('username'),
+                                    password=request.POST.get('password1'))
+            login(request, new_user)
+            return redirect(home)
+    else:
+        form = UserCreationForm()
+    return render(request, 'blogapp/register.html', dict(form=form))
 
 
 def login_page(request):

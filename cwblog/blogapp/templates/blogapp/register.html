@@ -9,10 +9,10 @@
 {% block headline %}<h1>Register to vote and submit</h1>{% endblock %}
 
 {% block content %}
-    <form action='' method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Sign Up">
+    <form action='{% url 'register' %}' method="POST">
+         {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="submit" />
     </form>
 {% endblock %}
 </body>

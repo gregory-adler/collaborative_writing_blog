@@ -10,9 +10,12 @@
     <title></title>
 </head>
 <body>
-    <a href="{% url 'login' %}">login</a>
-    <a href="{% url 'trylogout' %}">logout</a>
-    <a href="{% url 'register' %}">register</a>
+    <span class="full-width-bar">
+        <a style="color:aliceblue;" href="{% url 'login' %}">login</a>
+        <a style="color:aliceblue;" href="{% url 'trylogout' %}">logout</a>
+        <a style="color:aliceblue;" href="{% url 'register' %}">register</a>
+    </span>
+
     <div id="story">
         {% for story in stories %}
             <div class="title">

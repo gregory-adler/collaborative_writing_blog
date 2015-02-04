@@ -3,6 +3,14 @@
 	position: relative;
 	font-size: 40px;
 	margin-left: 41%;
+    color: whitesmoke;
+}
+
+.full-width-bar {
+  display: inline-block;
+  margin: 0 -9999rem;
+  padding: 0.25rem 9999rem;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .title_text {
