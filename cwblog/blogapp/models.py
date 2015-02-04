@@ -17,7 +17,8 @@ class Submission(models.Model):
     text = models.CharField(max_length=140)
     votes = models.IntegerField(default=0)
     date = models.DateTimeField()
-    author = models.ForeignKey(User)
+    author = models.ForeignKey(User, related_name='author')
+    voted_on = models.ManyToManyField(User, related_name='voter')
 
     def __str__(self):
         return self.text

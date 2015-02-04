@@ -49,22 +49,26 @@ def post_submission(request, page):
 
 @login_required
 def like_button(request, page, submission_id):
-    submission = Submission.objects.get(pk=submission_id)
-    submission.votes += 1
-    submission.save()
-    if submission.votes >= 10:
-        add_to_story(submission)
+    if not Submission.objects.filter(voted_on=request.user).filter(pk=submission_id).exists():
+        submission = Submission.objects.get(pk=submission_id)
+        submission.votes += 1
+        submission.voted_on.add(request.user)
+        submission.save()
+        if submission.votes >= 10:
+            add_to_story(submission)
     return redirect(main, page)
 
 
 @login_required
 def dislike_button(request, page, submission_id):
-    submission = Submission.objects.get(pk=submission_id)
-    if submission.votes <= 0:
-        pass
-    else:
-        submission.votes -= 1
-        submission.save()
+    if not Submission.objects.filter(voted_on=request.user).filter(pk=submission_id).exists():
+        submission = Submission.objects.get(pk=submission_id)
+        if submission.votes <= -5:
+            submission.delete()
+        else:
+            submission.votes -= 1
+            submission.voted_on.add(request.user)
+            submission.save()
     return redirect(main, page)
 
 
