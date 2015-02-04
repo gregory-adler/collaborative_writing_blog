@@ -1,16 +1,39 @@
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header, .full-width {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding-bottom: 2em;
+}
+.login {
+ display: inline-block;
+ margin-left: -23em;
+}
+
+.logout {
+ display: inline-block;
+}
+
+.register {
+ display: inline-block;
+}
+
+
+.wrap {
+  width: 80%;
+  max-width: 24em;
+  margin: 0 auto;
+  padding: 0.25em 0.625em;
+}
+
 .title{
 	position: relative;
 	font-size: 40px;
 	margin-left: 41%;
-    color: whitesmoke;
-}
-
-.full-width-bar {
-  display: inline-block;
-  margin: 0 -9999rem;
-  padding: 0.25rem 9999rem;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .title_text {
@@ -63,13 +86,6 @@
 	top: 8em;
 }
 
-.submissions {
-	position: relative;
-	width: 100%;
-	margin-top: 1em;
-	margin-left: 41%;
-	left: .3em;
-}
 
 .submission_box{
 	position: relative;
@@ -153,6 +169,3 @@
 	top: .15em;
 }
 
-.new_story_button {
-	margin-left: 35.4em;
-}
