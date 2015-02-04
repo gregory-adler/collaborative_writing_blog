@@ -20,10 +20,8 @@
             </div>
                 <ul>
                     <div class="time">{{ story.date }}</div>
-                    <div class="body">{{ story.body | linebreaks }}</div>
                      <div class= "story_box">
                     <div class="body">{{ story.body|linebreaks }}</div>
-
                     </div>
                 </ul>
 
@@ -42,12 +40,6 @@
                 {% csrf_token %}
                 <p> Add Entry: <input type= "text" name="submission">
                 <input type="hidden" name="story_id" value="{{ story.pk }}">
-            <div class= "submission_entry">
-            <form action='{{ stories.number}}/submission/' method='post'>{% csrf_token %}
-            <p> Add Entry: <input type= "text" name="submission">
-            <input type='submit' value='Submit' />
-            </form>
-            </div>
             </div>
 
             <div class= "submissions">
@@ -76,15 +68,11 @@
         <div class= "new_story">
             <div class= "new_story_button">
             <form action='/newstory/' method='post'>{% csrf_token %}
-            <input type='submit' value='NewStory' />
+            <input type='submit' value='New story' />
             </form>
             </div>
             </div>
 
-
-
-
-    
 
      <!-- Next/Prev page links  -->
         {% if stories.object_list and stories.paginator.num_pages > 1 %}
