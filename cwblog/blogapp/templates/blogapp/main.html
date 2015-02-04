@@ -10,36 +10,27 @@
     <title></title>
 </head>
 <body>
-<<<<<<< Updated upstream
-    <span class="full-width-bar">
-        {% if user.is_authenticated %}
-            <p style="color: aliceblue; display:inline-block">Welcome {{ user.get_username }}! </p>
-        {% else %}
-            <a style="color:aliceblue;" href="{% url 'login' %}">login</a>
-            <a style="color:aliceblue;" href="{% url 'register' %}">register</a>
-        {% endif %}
-        <a style="color:aliceblue;" href="{% url 'trylogout' %}">logout</a>
-
-    </span>
-=======
 
 <header>
   <div class="wrap">
-        <div class= "login">
-        <a style="color:aliceblue;" href="{% url 'login' %}">login</a>
-        </div>
-        <div class= "logout">
+      {% if user.is_authenticated %}
+           <div class="user">
+            <p style="color: aliceblue; display:inline-block">Welcome {{ user.get_username }}! </p>
+          </div>
+        {% else %}
+          <div class="login">
+            <a style="color:aliceblue;" href="{% url 'login' %}">login</a>
+          </div>
+          <div class="register">
+            <a style="color:aliceblue;" href="{% url 'register' %}">register</a>
+          </div>
+        {% endif %}
+        <div class="logout">
         <a style="color:aliceblue;" href="{% url 'trylogout' %}">logout</a>
-        </div>
-        <div class= "register">
-        <a style="color:aliceblue;" href="{% url 'register' %}">register</a>
         </div>
     </div>
 </header>
 
-        
-
->>>>>>> Stashed changes
 
     <div id="story">
         {% for story in stories %}
