@@ -20,7 +20,14 @@
             </div>
                 <ul>
                     <div class="time">{{ story.date }}</div>
+<<<<<<< HEAD
                     <div class="body">{{ story.body | linebreaks }}</div>
+=======
+                     <div class= "story_box">
+                    <div class="body">{{ story.body|linebreaks }}</div>
+
+                    </div>
+>>>>>>> 53f9e928140d3c2e393734b86c46b48721b69663
                 </ul>
 
 
@@ -31,13 +38,22 @@
             </span>
 
 
+            
+
             <div class= "add_submission">
+<<<<<<< HEAD
             <form action='{{ stories.number }}/submission/' method='post'>
                 {% csrf_token %}
                 <p> Add Entry: <input type= "text" name="submission">
                 <input type="hidden" name="story_id" value="{{ story.pk }}">
+=======
+            <div class= "submission_entry">
+            <form action='{{ stories.number}}/submission/' method='post'>{% csrf_token %}
+            <p> Add Entry: <input type= "text" name="submission">
+>>>>>>> 53f9e928140d3c2e393734b86c46b48721b69663
             <input type='submit' value='Submit' />
             </form>
+            </div>
             </div>
 
             <div class= "submissions">
@@ -62,6 +78,14 @@
                 {% endfor %}
             </div>
         {% endfor %}
+
+        <div class= "new_story">
+            <div class= "new_story_button">
+            <form action='/newstory/' method='post'>{% csrf_token %}
+            <input type='submit' value='NewStory' />
+            </form>
+            </div>
+            </div>
 
 
 

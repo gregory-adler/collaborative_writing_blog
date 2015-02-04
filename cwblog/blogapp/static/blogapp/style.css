@@ -19,9 +19,13 @@
 	margin-top: -.5em;
 }
 
+.story_box {
+	margin-left: -19em;
+}
+
 .body {
 	margin-left: 41%;
-	width: 13em;
+	width: 34em;
 	padding-left: .5em;
 	padding-right: .5em;
 	text-align: center;
@@ -34,21 +38,21 @@
 	position: relative;
 	margin-left: 41%;
 	margin-top: -1em;
-	left: 3.625em;
+	left: 3.2em;
 }
 
 .newer_entries {
 	position: absolute;
 	left:41%;
-	margin-left: -1em;
-	top: 7em;
+	margin-left: -13em;
+	top: 8em;
 }
 
 .older_entries {
 	position: absolute;
 	left: 41%;
-	margin-left: 16.5em;
-	top: 7em;
+	margin-left: 26.5em;
+	top: 8em;
 }
 
 .submissions {
@@ -63,14 +67,18 @@
 	position: relative;
 	border: solid;
 	border-width: 1px;
-	width: 17em;
-	margin-left: -.5em;
+	width: 25em;
+	margin-left: -6em;
+	word-wrap: break-word;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-top: 1em;
 
 }
 
 .submission_title {
 	font-size: 12px;
-	margin-left: 5.8em;
+	margin-left: 4.8em;
 	margin-bottom: -.5em;
 }
 
@@ -93,6 +101,7 @@
 	background-color:#89c403;
 	color:#ffffff;
     display:inline-block;
+    margin-left: -8.5em;
 }
 
 .like:active {
@@ -110,7 +119,10 @@
 	background-color: #ff0a27;
 	color:#ffffff;
     display:inline-block;
-}
+    margin-left: -6em; }
+
+
+
 
 .dislike:active {
 	position:relative;
@@ -122,6 +134,17 @@
 	margin-left: 41%; 
 }
 
-.story_number {
+.submission_entry {
+	margin-left: -1.4em;
+}
 
+.new_story {
+	position: absolute;
+	padding-top: .5em;
+	margin-left: 41%; 
+	top: .15em;
+}
+
+.new_story_button {
+	margin-left: 35.4em;
 }
