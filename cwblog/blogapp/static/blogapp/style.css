@@ -76,14 +76,12 @@ header, .full-width {
 	position: absolute;
 	left:41%;
 	margin-left: -13em;
-	top: 8em;
 }
 
 .older_entries {
 	position: absolute;
 	left: 41%;
 	margin-left: 26.5em;
-	top: 8em;
 }
 
 
@@ -125,7 +123,7 @@ header, .full-width {
 	background-color:#89c403;
 	color:#ffffff;
     display:inline-block;
-    margin-left: -8.5em;
+    margin-left: 8.5em;
 }
 
 .like:active {
@@ -143,7 +141,7 @@ header, .full-width {
 	background-color: #ff0a27;
 	color:#ffffff;
     display:inline-block;
-    margin-left: -6em; }
+    margin-left: 6em; }
 
 
 

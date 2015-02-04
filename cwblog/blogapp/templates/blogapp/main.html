@@ -11,9 +11,9 @@
 </head>
 <body>
 
-<header>
-  <div class="wrap">
-      {% if user.is_authenticated %}
+    <header>
+      <div class="wrap">
+        {% if user.is_authenticated %}
            <div class="user">
             <p style="color: aliceblue; display:inline-block">Welcome {{ user.get_username }}! </p>
           </div>
@@ -28,73 +28,14 @@
         <div class="logout">
         <a style="color:aliceblue;" href="{% url 'trylogout' %}">logout</a>
         </div>
-    </div>
-</header>
-
-
-    <div id="story">
+            <div id="story">
         {% for story in stories %}
             <div class="title">
-                <div class= "title_text"> {{ story.title }} </div>
+            <div class= "title_text"> {{ story.title }} </div>
             </div>
-                <ul>
-                    <div class="time">{{ story.date }}</div>
-                     <div class= "story_box">
-                    <div class="body">{{ story.body|linebreaks }}</div>
-                    </div>
-                </ul>
+                <div class="time">{{ story.date }}</div>
 
-
-             <span class="current">
-                <div class= "current"> 
-                &nbsp;{{ stories.number }} of {{ stories.paginator.num_pages }}
-                </div>
-            </span>
-
-
-            
-
-            <div class= "add_submission">
-            <form action='{{ stories.number }}/submission/' method='post'>
-                {% csrf_token %}
-                <p> Add Entry: <input type= "text" name="submission">
-                <input type="hidden" name="story_id" value="{{ story.pk }}">
-                <input type="submit" name="submission_button" value="Add entry: "
-            </div>
-
-            <div class= "submissions">
-                <div class= "submission_title">
-                    <h1> Submissions </h1>
-                </div>
-                {% for submission in submissions %}
-                    {% ifequal submission.story.pk story.pk %}
-                        <div class= "submission_box">
-                            <div class= "text"> {{submission.text}}</div>
-                        </div>
-                        <div class="votes">{{ submission.votes }}</div>
-                        <form action="{{ stories.number }}/submission/{{ submission.pk }}/like/" style="display:inline-block;" method="post">
-                            {% csrf_token %}
-                            <input id="like" class="like" type="submit" value="like">
-                        </form>
-                        <form action="{{ stories.number }}/submission/{{ submission.pk }}/dislike/" style="display:inline-block;" method="post">
-                            {% csrf_token %}
-                            <input id="dislike" class="dislike" type="submit" value="dislike"/>
-                        </form>
-                    {% endifequal %}
-                {% endfor %}
-            </div>
-        {% endfor %}
-
-        <div class= "new_story">
-            <div class= "new_story_button">
-            <form action='/newstory/' method='post'>{% csrf_token %}
-            <input type='submit' value='New story' />
-            </form>
-            </div>
-            </div>
-
-
-     <!-- Next/Prev page links  -->
+        <!-- Next/Prev page links  -->
         {% if stories.object_list and stories.paginator.num_pages > 1 %}
         <div class="pagination" style="margin-top: 20px; margin-left: -20px; ">
             <span class="step-links">
@@ -111,7 +52,59 @@
                 {% endif %}
             </span>
         </div>
+        </div>
+        </div>
         {% endif %}
+    </header>
+
+    <div class= "story_box">
+        <div class="body">{{ story.body|linebreaks }}</div>
+    </div>
+         <span class="current">
+            <div class= "current"> 
+            &nbsp;{{ stories.number }} of {{ stories.paginator.num_pages }}
+            </div>
+        </span> 
+
+    <div class= "add_submission">
+    <form action='{{ stories.number }}/submission/' method='post'>
+        {% csrf_token %}
+        <p> Add Entry: <input type= "text" name="submission">
+        <input type="hidden" name="story_id" value="{{ story.pk }}">
+        <input type="submit" name="submission_button" value="Add entry: ">
+    </div>
+
+    <div class= "submissions">
+        <div class= "submission_title">
+            <h1> Submissions </h1>
+        </div>
+        {% for submission in submissions %}
+            {% ifequal submission.story.pk story.pk %}
+                <div class= "submission_box">
+                    <div class= "text"> {{submission.text}}</div>
+                </div>
+                <div class="votes">{{ submission.votes }}</div>
+                <form action="{{ stories.number }}/submission/{{ submission.pk }}/like/" style="display:inline-block;" method="post">
+                    {% csrf_token %}
+                    <input id="like" class="like" type="submit" value="like">
+                </form>
+                <form action="{{ stories.number }}/submission/{{ submission.pk }}/dislike/" style="display:inline-block;" method="post">
+                    {% csrf_token %}
+                    <input id="dislike" class="dislike" type="submit" value="dislike"/>
+                </form>
+            {% endifequal %}
+        {% endfor %}
+    </div>
+    {% endfor %}
+
+    <div class= "new_story">
+        <div class= "new_story_button">
+        <form action='/newstory/' method='post'>{% csrf_token %}
+        <input type='submit' value='New story' />
+        </form>
+        </div>
+        </div>
+
 
     </div>
 </body>
