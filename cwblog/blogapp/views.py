@@ -32,10 +32,9 @@ def main(request, page):
 
 @login_required
 def post_submission(request, page):
-<<<<<<< HEAD
     story_id = request.POST["story_id"]
     if not Submission.objects.filter(story=story_id, author=request.user).exists():
-        if request.POST["submission"] == "":
+        if request.POST["submission"] == "" or len(request.POST["submission"])>150:
             pass
         else:
             new_submission = Submission()
@@ -44,17 +43,6 @@ def post_submission(request, page):
             new_submission.author = request.user
             new_submission.date = timezone.now()
             new_submission.save()
-=======
-
-    if request.POST["submission"]== "" or len(request.POST["submission"])>150:
-        pass
-    else:
-        new_submission = Submission() 
-        new_submission.text = request.POST["submission"]
-        new_submission.story = Story.objects.get(pk=page)
-        new_submission.date = timezone.now()
-        new_submission.save()
->>>>>>> 53f9e928140d3c2e393734b86c46b48721b69663
 
     return redirect(main, page)
 
@@ -73,39 +61,24 @@ def like_button(request, page, submission_id):
 
 @login_required
 def dislike_button(request, page, submission_id):
-<<<<<<< HEAD
     if not Submission.objects.filter(voted_on=request.user).filter(pk=submission_id).exists():
         submission = Submission.objects.get(pk=submission_id)
-        if submission.votes <= -5:
+        if submission.votes <= -4:
             submission.delete()
         else:
             submission.votes -= 1
             submission.voted_on.add(request.user)
             submission.save()
-=======
-    submission = Submission.objects.get(pk=submission_id)
-    if submission.votes ==-4:
-        submissin.delete()
-    else:
-        submission.votes -= 1
-        submission.save()
->>>>>>> 53f9e928140d3c2e393734b86c46b48721b69663
     return redirect(main, page)
 
 
 def add_to_story(submission):
     submission.story.body = submission.story.body + '\n' + submission.text
     submission.story.save()
-    submissions = Submission.objects.all()
-
+    submissions = Submission.objects.filter(story=submission.story)
     for i in submissions:
-        if i== submission:
-            pass
-        else:
-            if i.story== submission.story:
-                i.delete()
+        i.delete()
 
-    submission.delete()
 
 def add_new_story(request):
 
@@ -124,8 +97,8 @@ def add_new_story(request):
     return redirect(main, new_story.pk)
 
 
-def new_story (request):
-     return render(request, 'blogapp/new_story.html')
+def new_story(request):
+    return render(request, 'blogapp/new_story.html')
 
 
 class RegisterView(CreateView):

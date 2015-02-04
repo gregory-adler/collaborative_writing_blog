@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7c08479-a737-490f-890b-343e4c543580" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cwblog/db.sqlite3" afterPath="$PROJECT_DIR$/cwblog/db.sqlite3" />
+    <list default="true" id="d7c08479-a737-490f-890b-343e4c543580" name="Default" comment="Passing page number to views.main is working">
+      <change type="DELETED" beforePath="D:\Libraries\workspace\collaborative_writing_blog\collaborative_writing_blog\cwblog\db.sqlite3" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/collaborative_writing_blog.iml" afterPath="$PROJECT_DIR$/.idea/collaborative_writing_blog.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/main.html" afterPath="$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cwblog/cwblog/urls.py" afterPath="$PROJECT_DIR$/cwblog/cwblog/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cwblog/blogapp/views.py" afterPath="$PROJECT_DIR$/cwblog/blogapp/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -34,27 +35,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cwblog/blogapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8320988" vertical-offset="530" max-vertical-offset="1003">
-              <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="2760">
+              <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#57#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5" vertical-offset="505" max-vertical-offset="1462">
-              <caret line="32" column="95" selection-start-line="32" selection-start-column="95" selection-end-line="32" selection-end-column="95" />
-              <folding>
-                <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#form#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-1.6734349" vertical-offset="1409" max-vertical-offset="2300">
+              <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,8 +60,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cwblog/blogapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="620">
+              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -72,8 +70,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cwblog/cwblog/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-              <caret line="10" column="128" selection-start-line="10" selection-start-column="128" selection-end-line="10" selection-end-column="128" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="500">
+              <caret line="10" column="73" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -84,14 +82,15 @@
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cwblog/blogapp/views.py" />
         <option value="$PROJECT_DIR$/cwblog/cwblog/urls.py" />
+        <option value="$PROJECT_DIR$/cwblog/blogapp/views.py" />
         <option value="$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/main.html" />
       </list>
     </option>
@@ -102,8 +101,27 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyInterpreterInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -128,6 +146,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -198,7 +217,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -229,19 +247,11 @@
             <option name="mySupportsDeletion" value="false" />
             <option name="myCanBeAbsent" value="false" />
             <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/blogapp/__init__.pyc</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/blogapp/admin.pyc</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/blogapp/models.pyc</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/.idea/workspace.xml</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/blogapp/models.py</PATH>
             <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/main.html</PATH>
             <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/blogapp/views.py</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/blogapp/views.pyc</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/cwblog/__init__.pyc</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/cwblog/settings.py</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/cwblog/settings.pyc</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/cwblog/urls.py</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/cwblog/urls.pyc</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/cwblog/wsgi.pyc</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/db.sqlite3</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/~</PATH>
           </FILE-GROUP>
           <FILE-GROUP>
             <option name="myUpdateName" value="Created" />
@@ -249,9 +259,10 @@
             <option name="mySupportsDeletion" value="false" />
             <option name="myCanBeAbsent" value="false" />
             <option name="myId" value="CREATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/blogapp/forms.pyc</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/save_data.py</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/~</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/.idea/dataSources.ids</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/.idea/dataSources.local.xml</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/.idea/dataSources.xml</PATH>
           </FILE-GROUP>
           <FILE-GROUP>
             <option name="myUpdateName" value="Deleted" />
@@ -259,6 +270,7 @@
             <option name="mySupportsDeletion" value="false" />
             <option name="myCanBeAbsent" value="true" />
             <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/new_story.html</PATH>
           </FILE-GROUP>
           <FILE-GROUP>
             <option name="myUpdateName" value="Restored" />
@@ -553,24 +565,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.06603774" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3191824" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23197491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31870428" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10102489" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10298826" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -604,10 +616,82 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/cwblog/blogapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2520">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="640" max-vertical-offset="2200">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwblog/blogapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="560">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwblog/cwblog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="500">
+          <caret line="10" column="73" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwblog/blogapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2520">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="640" max-vertical-offset="2200">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwblog/blogapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="560">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwblog/cwblog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="500">
+          <caret line="10" column="73" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwblog/blogapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -616,10 +700,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="471" max-vertical-offset="1530">
           <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -646,7 +727,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -655,10 +736,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="471" max-vertical-offset="1530">
           <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -685,7 +763,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -694,10 +772,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="443" max-vertical-offset="1377">
           <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -724,7 +799,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="578">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -733,10 +808,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -763,7 +835,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="578">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -772,10 +844,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -802,7 +871,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -811,10 +880,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="799">
           <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -841,7 +907,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -850,10 +916,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="799">
           <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -877,40 +940,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cwblog/cwblog/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <caret line="10" column="128" selection-start-line="10" selection-start-column="128" selection-end-line="10" selection-end-column="128" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="500">
+          <caret line="10" column="73" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cwblog/blogapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="2760">
+          <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cwblog/blogapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="640">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5" vertical-offset="505" max-vertical-offset="1462">
-          <caret line="32" column="95" selection-start-line="32" selection-start-column="95" selection-end-line="32" selection-end-column="95" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cwblog/blogapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8320988" vertical-offset="530" max-vertical-offset="1003">
-          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-1.6734349" vertical-offset="1409" max-vertical-offset="2300">
+          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
