@@ -38,7 +38,7 @@
 
             <div class= "add_submission">
             <div class= "submission_entry">
-            <form action='{{ stories.number }}/submission/' method='post'>{% csrf_token %}
+            <form action='{{ stories.number}}/submission/' method='post'>{% csrf_token %}
             <p> Add Entry: <input type= "text" name="submission">
             <input type='submit' value='Submit' />
             </form>
@@ -70,8 +70,8 @@
 
         <div class= "new_story">
             <div class= "new_story_button">
-            <form action='{{ stories.number }}/submission/' method='post'>{% csrf_token %}
-            <input type='submit' value='New Story' />
+            <form action='/newstory/' method='post'>{% csrf_token %}
+            <input type='submit' value='NewStory' />
             </form>
             </div>
             </div>

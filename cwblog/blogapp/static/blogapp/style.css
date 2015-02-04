@@ -45,14 +45,14 @@
 	position: absolute;
 	left:41%;
 	margin-left: -13em;
-	top: 15em;
+	top: 8em;
 }
 
 .older_entries {
 	position: absolute;
 	left: 41%;
 	margin-left: 26.5em;
-	top: 15em;
+	top: 8em;
 }
 
 .submissions {
@@ -139,10 +139,12 @@
 }
 
 .new_story {
+	position: absolute;
 	padding-top: .5em;
 	margin-left: 41%; 
+	top: .15em;
 }
 
 .new_story_button {
-	margin-left: 5.4em;
+	margin-left: 35.4em;
 }

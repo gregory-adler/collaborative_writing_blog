@@ -1741,3 +1741,486 @@ Traceback (most recent call last):
     if i.story== submission.story.title
                                       ^
 SyntaxError: invalid syntax
+Internal Server Error: /1/submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 35, in post_submission
+    if request.POST["submission"]== "":
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'submission'"
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 35
+    if request.POST["submission"]== "" OR len(request.POST)>150:
+                                        ^
+SyntaxError: invalid syntax
+Internal Server Error: /1/submission/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 35, in post_submission
+    if request.POST["submission"]== "" or len(request.POST["submission"])>150:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'submission'"
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 12, in <module>
+    url(r'^new_story/$', views.new_story(), name='new_story'),
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 84, in new_story
+    return redirect (new_story)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 76, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 165, in resolve_url
+    return urlresolvers.reverse(to, args=args, kwargs=kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 415, in _reverse_with_prefix
+    self._populate()
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 269, in _populate
+    for pattern in reversed(self.url_patterns):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 381, in url_patterns
+    raise ImproperlyConfigured(msg.format(name=self.urlconf_name))
+ImproperlyConfigured: The included urlconf 'cwblog.urls' does not appear to have any patterns in it. If you see valid patterns in the file then the issue is probably caused by a circular import.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 12, in <module>
+    url(r'^newstory/$', views.new_story(), name='new_story'),
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 84, in new_story
+    return redirect (new_story)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 76, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 165, in resolve_url
+    return urlresolvers.reverse(to, args=args, kwargs=kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 415, in _reverse_with_prefix
+    self._populate()
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 269, in _populate
+    for pattern in reversed(self.url_patterns):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 381, in url_patterns
+    raise ImproperlyConfigured(msg.format(name=self.urlconf_name))
+ImproperlyConfigured: The included urlconf 'cwblog.urls' does not appear to have any patterns in it. If you see valid patterns in the file then the issue is probably caused by a circular import.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 12, in <module>
+    url(r'^newstory/$', views.new_story(), name='new_story'),
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 84, in new_story
+    return redirect (main)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 76, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 165, in resolve_url
+    return urlresolvers.reverse(to, args=args, kwargs=kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 415, in _reverse_with_prefix
+    self._populate()
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 269, in _populate
+    for pattern in reversed(self.url_patterns):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 381, in url_patterns
+    raise ImproperlyConfigured(msg.format(name=self.urlconf_name))
+ImproperlyConfigured: The included urlconf 'cwblog.urls' does not appear to have any patterns in it. If you see valid patterns in the file then the issue is probably caused by a circular import.
+Not Found: /new_story/
+Not Found: /new_story/
+Not Found: /new_story/
+Internal Server Error: /newstory/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: new_story() takes no arguments (1 given)
+Internal Server Error: /newstory/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 84, in new_story
+    return redirect (main)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 76, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 165, in resolve_url
+    return urlresolvers.reverse(to, args=args, kwargs=kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'blogapp.views.main' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(?P<page>\\d+)$']
+Internal Server Error: /newstory/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 84, in new_story
+    return redirect (main)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 76, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 165, in resolve_url
+    return urlresolvers.reverse(to, args=args, kwargs=kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'blogapp.views.main' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(?P<page>\\d+)$']
+Internal Server Error: /newstory/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 84, in new_story
+    return redirect (main)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 76, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 165, in resolve_url
+    return urlresolvers.reverse(to, args=args, kwargs=kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'blogapp.views.main' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(?P<page>\\d+)$']
+Internal Server Error: /newstory/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 14
+    url(r'^login/submit/$', views.try_login, name='trylogin'),
+   ^
+IndentationError: unexpected indent
+Internal Server Error: /newstory/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 14
+    url(r'^login/submit/$'), views.try_login, name='trylogin'),
+   ^
+IndentationError: unexpected indent
+Internal Server Error: /newstory/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 14
+    url(r'^login/submit/$'), views.try_login, name='trylogin'),
+   ^
+IndentationError: unexpected indent
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 14
+    url(r'^login/submit/$'), views.try_login, name='trylogin'),
+   ^
+IndentationError: unexpected indent
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 14
+    url(r'^login/submit/$', views.try_login, name='trylogin'),
+   ^
+IndentationError: unexpected indent
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 14
+    url(r'^login/submit/$', views.try_login, name='trylogin'),
+   ^
+IndentationError: unexpected indent
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 13, in <module>
+    url (r'^addnewstory/$', views.add_new_story, name='addnewstory'),
+AttributeError: 'module' object has no attribute 'add_new_story'
+Internal Server Error: /newstory/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 86
+    def new_story (request):
+      ^
+IndentationError: expected an indented block
+Not Found: /new_story/
+Internal Server Error: /addnewstory/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 83, in add_new_story
+    return redirect(main)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 76, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 165, in resolve_url
+    return urlresolvers.reverse(to, args=args, kwargs=kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'blogapp.views.main' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(?P<page>\\d+)$']
+Internal Server Error: /addnewstory/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 83, in add_new_story
+    return redirect(main)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 76, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 165, in resolve_url
+    return urlresolvers.reverse(to, args=args, kwargs=kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'blogapp.views.main' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(?P<page>\\d+)$']
+Internal Server Error: /addnewstory/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 83, in add_new_story
+    return redirect(main)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 76, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 165, in resolve_url
+    return urlresolvers.reverse(to, args=args, kwargs=kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'blogapp.views.main' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(?P<page>\\d+)$']
+Internal Server Error: /newstory/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 87, in new_story
+    return render(request, 'blogapp/add_new_story', dict(stories=stories, submissions=submissions))
+NameError: global name 'stories' is not defined
+Internal Server Error: /newstory/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 87, in new_story
+    return render(request, 'blogapp/add_new_story')
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/template/loader.py", line 136, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: blogapp/add_new_story
+Internal Server Error: /newstory/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 87, in new_story
+    return render(request, 'blogapp/add_new_story')
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/template/loader.py", line 136, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: blogapp/add_new_story
+Internal Server Error: /newstory/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 87, in new_story
+    return render(request, 'blogapp/add_new_story')
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/template/loader.py", line 136, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: blogapp/add_new_story
+Internal Server Error: /newstory/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 87, in new_story
+    return render(request, 'blogapp/add_new_story')
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/template/loader.py", line 136, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: blogapp/add_new_story
+Not Found: /addnewstory/
+Not Found: /addnewstory/
+Not Found: /addnewstory/
+Internal Server Error: /add_new_story/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 83, in add_new_story
+    return redirect(main)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 76, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/shortcuts.py", line 165, in resolve_url
+    return urlresolvers.reverse(to, args=args, kwargs=kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'blogapp.views.main' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['(?P<page>\\d+)$']
+Internal Server Error: /add_new_story/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 96, in add_new_story
+    return redirect(main, new_story.get(pk))
+AttributeError: 'Story' object has no attribute 'get'
+Internal Server Error: /add_new_story/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 99
+    def new_story (request):
+      ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/cwblog/urls.py", line 3, in <module>
+    from blogapp import views
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 99
+    def new_story (request):
+      ^
+SyntaxError: invalid syntax

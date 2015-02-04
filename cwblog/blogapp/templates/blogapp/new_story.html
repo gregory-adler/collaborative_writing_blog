@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>NewStory</title>
+</head>
+<body>
+
+
+{% block content %}
+    <form action='/add_new_story/' method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p> Story Title: <input type= "text" name="new_story">
+        <p> First line: <input type= "text" name="story_text">
+        <div class= "new_story_button">
+        <input type='submit' value='Start Story' />
+       	</div>
+    </form>
+{% endblock %}
+</body>
+</html>

@@ -18,7 +18,7 @@ def home(request):
 
 def main(request, page):
 
-    stories = Story.objects.all().order_by('-date')
+    stories = Story.objects.all().order_by('date')
     submissions = Submission.objects.all().order_by('-votes')
     paginator = Paginator(stories, 1)
 
@@ -32,7 +32,7 @@ def main(request, page):
 @login_required
 def post_submission(request, page):
 
-    if request.POST["submission"]== "":
+    if request.POST["submission"]== "" or len(request.POST["submission"])>150:
         pass
     else:
         new_submission = Submission() 
@@ -76,9 +76,28 @@ def add_to_story(submission):
         else:
             if i.story== submission.story:
                 i.delete()
-    
 
     submission.delete()
+
+def add_new_story(request):
+
+    if request.POST["story_text"]== "" or len(request.POST["new_story"])>150:
+        return redirect(home)
+
+    if request.POST["new_story"]== "" or len(request.POST["new_story"])>100:
+        return redirect(home)
+    else:
+        new_story = Story() 
+        new_story.title = request.POST["new_story"]
+        new_story.body = request.POST["story_text"]
+        new_story.date = timezone.now()
+        new_story.save()
+
+    return redirect(main, new_story.pk)
+
+
+def new_story (request):
+     return render(request, 'blogapp/new_story.html')
 
 
 class RegisterView(CreateView):
