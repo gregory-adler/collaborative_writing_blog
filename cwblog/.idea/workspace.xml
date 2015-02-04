@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebf0900c-d35d-4471-ad93-87cf75ee9e39" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\Libraries\workspace\collaborative_writing_blog\cwblog\db.sqlite3" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blogapp/templates/blogapp/main.html" afterPath="$PROJECT_DIR$/blogapp/templates/blogapp/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blogapp/models.py" afterPath="$PROJECT_DIR$/blogapp/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blogapp/views.py" afterPath="$PROJECT_DIR$/blogapp/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="ebf0900c-d35d-4471-ad93-87cf75ee9e39" name="Default" comment="" />
     <ignored path="cwblog.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -578,7 +572,13 @@
       <option name="project" value="LOCAL" />
       <updated>1423017369880</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Users can only vote once per submission; changed models again">
+      <created>1423019755121</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1423019755121</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -654,7 +654,8 @@
     <MESSAGE value="Login page created, but users can't log in yet" />
     <MESSAGE value="Users can login and log out; only users can submit and vote" />
     <MESSAGE value="Users can only submit one submission per round; changed models" />
-    <option name="LAST_COMMIT_MESSAGE" value="Users can only submit one submission per round; changed models" />
+    <MESSAGE value="Users can only vote once per submission; changed models again" />
+    <option name="LAST_COMMIT_MESSAGE" value="Users can only vote once per submission; changed models again" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
