@@ -29,17 +29,20 @@ def main(request, page):
 
     return render(request, 'blogapp/main.html', dict(stories=stories, submissions=submissions))
 
+
 @login_required
 def post_submission(request, page):
-
-    if request.POST["submission"]== "":
-        pass
-    else:
-        new_submission = Submission() 
-        new_submission.text = request.POST["submission"]
-        new_submission.story = Story.objects.get(pk=page)
-        new_submission.date = timezone.now()
-        new_submission.save()
+    story_id = request.POST["story_id"]
+    if not Submission.objects.filter(story=story_id, author=request.user).exists():
+        if request.POST["submission"] == "":
+            pass
+        else:
+            new_submission = Submission()
+            new_submission.text = request.POST["submission"]
+            new_submission.story = Story.objects.get(pk=story_id)
+            new_submission.author = request.user
+            new_submission.date = timezone.now()
+            new_submission.save()
 
     return redirect(main, page)
 

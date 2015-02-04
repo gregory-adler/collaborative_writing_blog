@@ -32,8 +32,10 @@
 
 
             <div class= "add_submission">
-            <form action='{{ stories.number }}/submission/' method='post'>{% csrf_token %}
-            <p> Add Entry: <input type= "text" name="submission">
+            <form action='{{ stories.number }}/submission/' method='post'>
+                {% csrf_token %}
+                <p> Add Entry: <input type= "text" name="submission">
+                <input type="hidden" name="story_id" value="{{ story.pk }}">
             <input type='submit' value='Submit' />
             </form>
             </div>
