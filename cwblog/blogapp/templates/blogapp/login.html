@@ -5,6 +5,11 @@
     <title>login page</title>
 </head>
 <body>
+    <ul>
+        {% for message in messages.errors %}
+            {% if 'error' in message.tags %}<li style="color:red;">{{ message }}</li>{% endif %}
+        {% endfor %}
+    </ul>
 
         <form id="login_form" method="post" action="submit/">
             {% csrf_token %}

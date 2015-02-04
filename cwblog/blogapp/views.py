@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.core.paginator import Paginator, InvalidPage, EmptyPage
+from django.template import RequestContext
 from django.utils import timezone
 from django.shortcuts import redirect
 from django.contrib.auth.forms import UserCreationForm
@@ -16,7 +17,7 @@ def home(request):
 
 
 def main(request, page):
-
+    #context = RequestContext(request)
     stories = Story.objects.all().order_by('date')
     submissions = Submission.objects.all().order_by('-votes')
     paginator = Paginator(stories, 1)
@@ -78,7 +79,7 @@ def add_to_story(submission):
     for i in submissions:
         i.delete()
 
-
+@login_required
 def add_new_story(request):
 
     if request.POST["story_text"]== "" or len(request.POST["new_story"])>150:
@@ -105,7 +106,7 @@ def register(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
             new_user = form.save()
-            messages.info(request, "Thanks for registering. You are now logged in.")
+            messages.success(request, "Thanks for registering %s! You are now logged in." % request.POST.get('username'))
             new_user = authenticate(username=request.POST.get('username'),
                                     password=request.POST.get('password1'))
             login(request, new_user)
@@ -133,7 +134,7 @@ def try_login(request):
         return HttpResponse("Invalid login details supplied.")
 
 
-@login_required
+@login_required()
 def try_logout(request):
     logout(request)
     return redirect(home)

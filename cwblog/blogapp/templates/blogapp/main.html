@@ -11,9 +11,14 @@
 </head>
 <body>
     <span class="full-width-bar">
-        <a style="color:aliceblue;" href="{% url 'login' %}">login</a>
+        {% if user.is_authenticated %}
+            <p style="color: aliceblue; display:inline-block">Welcome {{ user.get_username }}! </p>
+        {% else %}
+            <a style="color:aliceblue;" href="{% url 'login' %}">login</a>
+            <a style="color:aliceblue;" href="{% url 'register' %}">register</a>
+        {% endif %}
         <a style="color:aliceblue;" href="{% url 'trylogout' %}">logout</a>
-        <a style="color:aliceblue;" href="{% url 'register' %}">register</a>
+
     </span>
 
     <div id="story">
