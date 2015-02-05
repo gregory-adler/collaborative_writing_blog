@@ -53,7 +53,7 @@ def like_button(request, page, submission_id):
         submission.votes += 1
         submission.voted_on.add(request.user)
         submission.save()
-        if submission.votes >= 10:
+        if submission.votes >= 5:
             add_to_story(submission)
     return redirect(main, page)
 
@@ -70,7 +70,7 @@ def dislike_button(request, page, submission_id):
             submission.save()
     return redirect(main, page)
 
-@login_required
+
 def add_to_story(submission):
     submission.story.body = submission.story.body + '\n' + submission.text
     submission.story.save()
@@ -95,7 +95,7 @@ def add_new_story(request):
 
     return redirect(main, new_story.pk)
 
-
+@login_required
 def new_story(request):
     return render(request, 'blogapp/new_story.html')
 
