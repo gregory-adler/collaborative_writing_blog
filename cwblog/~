@@ -2649,3 +2649,4 @@ Traceback (most recent call last):
   File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
     raise MultiValueDictKeyError(repr(key))
 MultiValueDictKeyError: "'username'"
+Not Found: /favicon.ico
