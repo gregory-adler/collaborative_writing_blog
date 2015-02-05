@@ -81,8 +81,12 @@
         {% for submission in submissions %}
             {% ifequal submission.story.pk story.pk %}
                 <div class= "submission_box">
+                <div class= "submission_box2">
                     <div class= "text"> {{submission.text}}</div>
                 </div>
+                </div>
+
+                <div class= "likedislike">
                 <form action="{{ stories.number }}/submission/{{ submission.pk }}/like/" style="display:inline-block;" method="post">
                     {% csrf_token %}
                     <input id="like" class="like" type="submit" value="like">
@@ -91,7 +95,7 @@
                     {% csrf_token %}
                     <input id="dislike" class="dislike" type="submit" value="dislike"/>
                  <div class="votes">{{ submission.votes }}</div>
-
+                 </div>
 
                 </form>
             {% endifequal %}

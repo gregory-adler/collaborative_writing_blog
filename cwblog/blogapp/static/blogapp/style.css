@@ -103,33 +103,30 @@ header, .full-width {
 	color: aliceblue;
 }
 
-.submissions {
-
-	margin-left: 50%;
-
-}
 
 .submission_box{
 	position: relative;
 	border: solid;
 	border-width: 1px;
 	width: 40em;
-	margin-left: -21em;
+	margin-left: 50%;
 	word-wrap: break-word;
 	padding-left: 1em;
 	padding-right: 1em;
 	margin-top: 1em;
 	 display:inline-block;
+	 left: -21em;
 }
 
 .submission_title {
 	font-size: 12px;
 	margin-bottom: -.5em;
-	margin-left: 45%;
+	margin-left: 50%;
 }
 
 .submission_title2 {
-	margin-left: -26em;
+	margin-left: -5em;
+
 }
 .text {
 	text-align: center;
@@ -146,7 +143,15 @@ header, .full-width {
     width: 1em;
     }
 
+.likedislike {
+	margin-left: 50%;
+	margin-top: -1.25em;
+
+}
+
 .like {
+	margin-top: -2em;
+	margin-left: 29em;
 	font-size:12px;
 	font-family:Times, serif;
 	font-weight:normal;

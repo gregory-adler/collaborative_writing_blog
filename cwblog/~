@@ -2650,3 +2650,7 @@ Traceback (most recent call last):
     raise MultiValueDictKeyError(repr(key))
 MultiValueDictKeyError: "'username'"
 Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
