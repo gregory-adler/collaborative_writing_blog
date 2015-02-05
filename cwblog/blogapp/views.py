@@ -17,7 +17,7 @@ def home(request):
 
 
 def main(request, page):
-    stories = Story.objects.all().order_by('date')
+    stories = Story.objects.all().order_by('-date')
     submissions = Submission.objects.all().order_by('-votes')
     paginator = Paginator(stories, 1)
 

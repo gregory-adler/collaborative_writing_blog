@@ -10,7 +10,7 @@
 
         <form id="login_form" method="post" action="{% url 'login' %}">
             {% csrf_token %}
-            <header><div><h1 style="color:white; padding-left:20px; padding-top:20px;">  Login </h1></div></header>
+            <header><div><h2 style="color:white; padding-left:20px; padding-top:20px;">  Login </h1></div></header>
             <ul>
                {% if messages %}
                    {% for message in messages %}

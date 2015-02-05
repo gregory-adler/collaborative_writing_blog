@@ -8,13 +8,13 @@
 </head>
 <body>
 
-{% block headline %} <header><div><h1 style="color:white; padding-left:20px; padding-top:20px;">  Register to vote and submit </h1></div></header>{% endblock %}
+{% block headline %} <header><div><h2 style="color:white; padding-left:20px; padding-top:20px;">  Register to vote and submit </h1></div></header>{% endblock %}
 
 {% block content %}
     <form action='{% url 'register' %}' method="POST">
          {% csrf_token %}
             {{ form.as_p }}
-            <input type="submit" value="submit" />
+            <input type="submit" value="Submit" />
     </form>
 {% endblock %}
 </body>

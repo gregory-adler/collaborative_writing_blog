@@ -12,72 +12,82 @@
 <body>
 
     <header>
-      <div class="wrap">
-        {% if user.is_authenticated %}
-           <div class="user">
-            <p style="color: aliceblue; display:inline-block">Welcome {{ user.get_username }}! </p>
-             <div class="logout">
-            <a style="color:aliceblue;" href="{% url 'logout' %}">logout</a>
-        </div>
-          </div>
-        {% else %}
-          <div class="login">
-            <a style="color:aliceblue;" href="{% url 'login' %}">login</a>
-          </div>
-          <div class="register">
-            <a style="color:aliceblue;" href="{% url 'register' %}">register</a>
-          </div>
-        {% endif %}
-            <div id="story">
+{#      <div class="wrap">#}
+
+{#      <div id="story">#}
         {% for story in stories %}
-            <div class="title">
-            <div class= "title_text"> {{ story.title }} </div>
-            </div>
-                <div class="time"> Created {{ story.date }}</div>
+{#            <span class="title">#}
+{#            </span>#}
+{#                <div class="time"> Created {{ story.date }}</div>#}
 
         <!-- Next/Prev page links  -->
-        {% if stories.object_list and stories.paginator.num_pages > 1 %}
-        <div class="pagination" style="margin-top: 20px; margin-left: -20px; ">
-            <span class="step-links">
-                {% if stories.has_previous %}
-                    <div class= "newer_entries"> 
-                    <a href= "{{ stories.previous_page_number }}"> &lt;&lt; </a>
-                    </div>
-                {% endif %}
+            <div class="title_and_arrows">
+                {% if stories.object_list and stories.paginator.num_pages > 1 %}
+        {#        <div class="pagination" style="margin-top: 20px; margin-left: -20px; ">#}
+                    {% if stories.has_previous %}
+                            <span class= "newer_entries">
+                            <a href= "{{ stories.previous_page_number }}"><img src="{% static 'blogapp/expand_arrow_alt_left.png' %}"></a>
 
-                {% if stories.has_next %}
-                    <div class= "older_entries">
-                    <a href="{{ stories.next_page_number }}"> &gt;&gt; </a>
-                    </div>
+                            </span>
+                    {% endif %}
                 {% endif %}
+                <span class= "title_text"> {{ story.title }} </span>
+                {% if stories.object_list and stories.paginator.num_pages > 1 %}
+                    {% if stories.has_next %}
+                        <span class= "older_entries">
+                            <a href="{{ stories.next_page_number }}"><img src="{% static 'blogapp/expand_arrow_alt.png' %}"></a>
+                        </span>
+                    {% endif %}
+                {% endif %}
+            </div>
+{#        </div>#}
+{#        </div>#}
+        <div class="time"> Created: {{ story.date }}</div>
+        {% if user.is_authenticated %}
+            <span class="user">
+                Welcome {{ user.get_username }}!
             </span>
-        </div>
-        </div>
-        </div>
+             <span class="logout">
+                 <a style="color:aliceblue;" href="{% url 'logout' %}">logout</a>
+             </span>
+
+        {% else %}
+              <span class="login">
+                <a style="color:aliceblue;" href="{% url 'login' %}">Login</a>
+              </span>
+              <span class="register">
+                <a style="color:aliceblue;" href="{% url 'register' %}">Register</a>
+              </span>
         {% endif %}
+{#        </div>#}
+        <span>
+            <form id="new_story" action="{% url 'new_story' %}" method="post">
+                {% csrf_token %}
+                <input type="submit" value="New story">
+            </form>
+        </span>
     </header>
 
-    <div class= "story_box">
-        <div class="body">{{ story.body|linebreaks }}</div>
-    </div>
+    <div class="body">{{ story.body|linebreaks }}</div>
          
 
-    <div class= "add_submission">
-    <div class= "text_box">
-    <form action='{{ stories.number }}/submission/' method='post'>
-        {% csrf_token %}
-        <p> Add Entry: <input type= "text" name="submission">
-        <input type="hidden" name="story_id" value="{{ story.pk }}">
-        <input type="submit" name="submission_button" value="Add ">
+{#    <div class= "add_submission">#}
+    <div class="text_box">
+        <form action='{{ stories.number }}/submission/'  method='post'>
+            {% csrf_token %}
+            <input type= "text" style="width:40em;" name="submission">
+            <input type="hidden"  name="story_id" value="{{ story.pk }}">
+            <input type="submit"  name="submission_button" value="Add entry">
+        </form>
     </div>
-    </div>
+{#    </div>#}
 
     <div class= "submissions">
-        <div class= "submission_title">
-        <div class= "submission_title2">
-            <h1> Submissions </h1>
-        </div>
-        </div>
+{#        <div class= "submission_title">#}
+{#        <div class= "submission_title2">#}
+{#            <h1> Submissions </h1>#}
+{#        </div>#}
+{#        </div>#}
         {% for submission in submissions %}
             {% ifequal submission.story.pk story.pk %}
                 <div class= "submission_box">
@@ -103,13 +113,9 @@
     </div>
     {% endfor %}
 
-    <div class= "new_story">
-        <div class= "new_story_button">
-        <form action='/newstory/' method='post'>{% csrf_token %}
-        <input type='submit' value='New story' />
-        </form>
-        </div>
-        </div>
+{#    <div class= "new_story">#}
+{##}
+{#        </div>#}
 
 
     </div>
