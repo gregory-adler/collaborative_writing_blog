@@ -70,7 +70,7 @@ def dislike_button(request, page, submission_id):
             submission.save()
     return redirect(main, page)
 
-
+@login_required
 def add_to_story(submission):
     submission.story.body = submission.story.body + '\n' + submission.text
     submission.story.save()
