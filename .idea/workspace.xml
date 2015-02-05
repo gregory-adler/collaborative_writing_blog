@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7c08479-a737-490f-890b-343e4c543580" name="Default" comment="Welcome user on login">
+    <list default="true" id="d7c08479-a737-490f-890b-343e4c543580" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cwblog/db.sqlite3" afterPath="$PROJECT_DIR$/cwblog/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/collaborative_writing_blog.iml" afterPath="$PROJECT_DIR$/.idea/collaborative_writing_blog.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/login.html" afterPath="$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/main.html" afterPath="$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/register.html" afterPath="$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cwblog/blogapp/static/blogapp/style.css" afterPath="$PROJECT_DIR$/cwblog/blogapp/static/blogapp/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cwblog/cwblog/urls.py" afterPath="$PROJECT_DIR$/cwblog/cwblog/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/new_story.html" afterPath="$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/new_story.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cwblog/blogapp/views.py" afterPath="$PROJECT_DIR$/cwblog/blogapp/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -39,13 +33,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cwblog/blogapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4903537" vertical-offset="2275" max-vertical-offset="2920">
-              <caret line="129" column="77" selection-start-line="129" selection-start-column="77" selection-end-line="129" selection-end-column="77" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1835" max-vertical-offset="2900">
+              <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_story.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/new_story.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.539629" vertical-offset="0" max-vertical-offset="593">
+              <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#div#0;n#header#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,8 +61,10 @@
         <entry file="file://$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/register.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-6.8965516" vertical-offset="0" max-vertical-offset="520">
-              <caret line="10" column="84" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="94" />
-              <folding />
+              <caret line="10" column="150" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,6 +151,7 @@
         <option value="$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/register.html" />
         <option value="$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/login.html" />
         <option value="$PROJECT_DIR$/cwblog/blogapp/views.py" />
+        <option value="$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/new_story.html" />
       </list>
     </option>
   </component>
@@ -543,20 +552,27 @@
       <option name="project" value="LOCAL" />
       <updated>1423087173894</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Error messages on invalid login; formatting login and register pages">
+      <created>1423106145898</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1423106145898</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23113208" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31661442" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31661442" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1670224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -564,7 +580,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -593,21 +608,14 @@
     <MESSAGE value="Everything might work again" />
     <MESSAGE value="Added submission button back" />
     <MESSAGE value="Welcome user on login" />
-    <option name="LAST_COMMIT_MESSAGE" value="Welcome user on login" />
+    <MESSAGE value="Error messages on invalid login; formatting login and register pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Error messages on invalid login; formatting login and register pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cwblog/blogapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="620">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cwblog/cwblog/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="500">
@@ -1020,13 +1028,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/login.html">
+    <entry file="file://$PROJECT_DIR$/cwblog/blogapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.034483" vertical-offset="0" max-vertical-offset="700">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1835" max-vertical-offset="2900">
+          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#header#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.8965516" vertical-offset="0" max-vertical-offset="520">
+          <caret line="10" column="150" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1039,20 +1056,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/register.html">
+    <entry file="file://$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.8965516" vertical-offset="0" max-vertical-offset="520">
-          <caret line="10" column="84" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="94" />
-          <folding />
+        <state vertical-scroll-proportion="-11.034483" vertical-offset="0" max-vertical-offset="700">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#header#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cwblog/blogapp/views.py">
+    <entry file="file://$PROJECT_DIR$/cwblog/blogapp/templates/blogapp/new_story.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4903537" vertical-offset="2275" max-vertical-offset="2920">
-          <caret line="129" column="77" selection-start-line="129" selection-start-column="77" selection-end-line="129" selection-end-column="77" />
+        <state vertical-scroll-proportion="0.539629" vertical-offset="0" max-vertical-offset="593">
+          <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#header#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

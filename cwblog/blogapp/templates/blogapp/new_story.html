@@ -1,20 +1,22 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>NewStory</title>
+    <title>New Story</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'blogapp/style.css' %}" />
 </head>
-<body>
 
+{% block headline %} <header><div><h1 style="color:white; padding-left:20px; padding-top:20px;">  Start a new story </h1></div></header>{% endblock %}
 
 {% block content %}
     <form action='/add_new_story/' method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <p> Story Title: <input type= "text" name="new_story">
-        <p> First line: <input type= "text" name="story_text">
+        <p> Story title: <input type= "text" name="new_story" size="35">
+        <p> First line: <input type= "text" name="story_text" size="100">
         <div class= "new_story_button">
-        <input type='submit' value='Start Story' />
+        <input type='submit' value='Start story' />
         </div>
     </form>
 {% endblock %}

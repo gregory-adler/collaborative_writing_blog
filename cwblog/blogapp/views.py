@@ -133,7 +133,6 @@ def try_login(request):
         return render(request, 'blogapp/login.html')
 
 
-
 @login_required()
 def try_logout(request):
     logout(request)
