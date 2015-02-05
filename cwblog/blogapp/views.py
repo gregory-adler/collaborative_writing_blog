@@ -17,7 +17,6 @@ def home(request):
 
 
 def main(request, page):
-    #context = RequestContext(request)
     stories = Story.objects.all().order_by('date')
     submissions = Submission.objects.all().order_by('-votes')
     paginator = Paginator(stories, 1)
@@ -105,7 +104,7 @@ def register(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         if form.is_valid():
-            new_user = form.save()
+            form.save()
             new_user = authenticate(username=request.POST.get('username'),
                                     password=request.POST.get('password1'))
             login(request, new_user)
@@ -115,24 +114,24 @@ def register(request):
     return render(request, 'blogapp/register.html', dict(form=form))
 
 
-def login_page(request):
-    return render(request, 'blogapp/login.html', dict(messages=messages.get_messages(request)))
-
-
 def try_login(request):
-    username = request.POST['username']
-    password = request.POST['password']
-    user = authenticate(username=username, password=password)
-    if user:
-        if user.is_active:
-            login(request, user)
-            return redirect(home)
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(username=username, password=password)
+        if user:
+            if user.is_active:
+                login(request, user)
+                return redirect(home)
+            else:
+                messages.error(request, "Your account has been disabled.")
+                return render(request, 'blogapp/login.html', dict(messages=messages.get_messages(request)))
         else:
-            messages.error(request,"Your account has been disabled.")
-            return redirect(login_page)
+            messages.error(request, "Incorrect username/password combination.")
+            return render(request, 'blogapp/login.html', dict(messages=messages.get_messages(request)))
     else:
-            messages.error(request,"Invalid login details supplied.")
-            return redirect(login_page)
+        return render(request, 'blogapp/login.html')
+
 
 
 @login_required()

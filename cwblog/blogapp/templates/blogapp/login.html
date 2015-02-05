@@ -1,23 +1,27 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <title>login page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'blogapp/style.css' %}" />
 </head>
 <body>
-    <ul>
-        {% for message in messages.errors %}
-            {% if 'error' in message.tags %}<li style="color:red;">{{ message }}</li>{% endif %}
-        {% endfor %}
-    </ul>
 
-        <form id="login_form" method="post" action="submit/">
+        <form id="login_form" method="post" action="{% url 'login' %}">
             {% csrf_token %}
-            <h2> Login </h2> <br/>
+            <header><div><h1 style="color:white; padding-left:20px; padding-top:20px;">  Login </h1></div></header>
+            <ul>
+               {% if messages %}
+                   {% for message in messages %}
+                       <li style="color: red;">{{ message }}</li>
+                   {% endfor %}
+               {% endif %}
+            </ul>
             Username: <input type="text" name="username" value="" size="50" />
-            <br />
+            <br/> <br/>
             Password: <input type="password" name="password" value="" size="50" />
-            <br />
+            <br/><br/>
 
             <input type="submit" value="submit" />
         </form>
