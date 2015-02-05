@@ -2631,3 +2631,21 @@ Traceback (most recent call last):
     return Database.Cursor.execute(self, query, params)
 django.db.utils.OperationalError: no such table: blogapp_submission_voted_on
 Not Found: /favicon.ico
+Internal Server Error: /login/submit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 124, in try_login
+    username = request.POST['username']
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'username'"
+Internal Server Error: /login/submit/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Gregory/GitHub/collaborative_writing_blog/cwblog/blogapp/views.py", line 124, in try_login
+    username = request.POST['username']
+  File "/Library/Python/2.7/site-packages/Django-1.7.3-py2.7.egg/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'username'"

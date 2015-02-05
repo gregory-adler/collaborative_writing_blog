@@ -2,12 +2,13 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    background: #F0FAFF
 }
 
 header, .full-width {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
-  padding-bottom: 2em;
+  padding-bottom: 0.5em;
 }
 .login {
  display: inline-block;
@@ -15,11 +16,19 @@ header, .full-width {
 }
 
 .logout {
+ position: relative;
  display: inline-block;
+
 }
 
 .register {
  display: inline-block;
+}
+
+.user {
+ position: absolute;
+ display: inline-block;
+ margin-left: -23em;
 }
 
 
@@ -33,36 +42,39 @@ header, .full-width {
 .title{
 	position: relative;
 	font-size: 40px;
-	margin-left: 41%;
+	text-align: center;
+	padding-bottom: .25em;
+	width: 15em;
 }
 
 .title_text {
-	text-align: center;
 	width: 6.5em;
+	margin-left: 1.25em;
+	color: white;
 }
 .time {
 	position: relative;
-	margin-left: 41%;
-	left: 2em;
+	text-align: center;
+	color: aliceblue;
+	margin-left: -1.5em;
 }
 
 .time {
 	margin-top: -.5em;
 }
 
-.story_box {
-	margin-left: -19em;
-}
+
 
 .body {
-	margin-left: 41%;
+	margin-left: 17em;
 	width: 34em;
 	padding-left: .5em;
 	padding-right: .5em;
 	text-align: center;
 	border: solid;
 	border-width: 1px;
-	margin-top: 1em;
+	margin-top: 2em;
+	margin-bottom: 1em;
 }
 
 .current {
@@ -75,27 +87,36 @@ header, .full-width {
 .newer_entries {
 	position: absolute;
 	left:41%;
-	margin-left: -13em;
+	margin-left: -4em;
+	top: 3em;
+	color: gray-white;
 }
 
 .older_entries {
 	position: absolute;
 	left: 41%;
-	margin-left: 26.5em;
+	margin-left: 13.5em;
+	top: 3em;
+	color: aliceblue;
 }
 
+.submissions {
+
+	margin-left: 27em;
+
+}
 
 .submission_box{
 	position: relative;
 	border: solid;
 	border-width: 1px;
 	width: 25em;
-	margin-left: -6em;
+	margin-left: -6.5em;
 	word-wrap: break-word;
 	padding-left: 1em;
 	padding-right: 1em;
 	margin-top: 1em;
-
+	 display:inline-block;
 }
 
 .submission_title {
@@ -109,10 +130,15 @@ header, .full-width {
 }
 
 .votes{
-    font-size: 14px;
+    font-size: 18px;
     font-family: Times,serif;
     display:inline-block;
-}
+    border-width: 1px;
+    padding-left: .25em;
+    padding-right: .25em;
+    margin-right: .25em;
+    width: 1em;
+    }
 
 .like {
 	font-size:12px;
@@ -123,7 +149,7 @@ header, .full-width {
 	background-color:#89c403;
 	color:#ffffff;
     display:inline-block;
-    margin-left: 8.5em;
+
 }
 
 .like:active {
@@ -141,7 +167,7 @@ header, .full-width {
 	background-color: #ff0a27;
 	color:#ffffff;
     display:inline-block;
-    margin-left: 6em; }
+    margin-left: .25em; }
 
 
 
@@ -153,7 +179,7 @@ header, .full-width {
 
 .add_submission {
 	padding-bottom: 1em;
-	margin-left: 41%; 
+	margin-left: 27em;
 }
 
 .submission_entry {
@@ -163,7 +189,9 @@ header, .full-width {
 .new_story {
 	position: absolute;
 	padding-top: .5em;
-	margin-left: 41%; 
+	margin-left: 85%; 
 	top: .15em;
 }
+
+
 
