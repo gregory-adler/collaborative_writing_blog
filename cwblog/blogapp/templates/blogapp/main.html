@@ -63,16 +63,20 @@
          
 
     <div class= "add_submission">
+    <div class= "text_box">
     <form action='{{ stories.number }}/submission/' method='post'>
         {% csrf_token %}
         <p> Add Entry: <input type= "text" name="submission">
         <input type="hidden" name="story_id" value="{{ story.pk }}">
         <input type="submit" name="submission_button" value="Add ">
     </div>
+    </div>
 
     <div class= "submissions">
         <div class= "submission_title">
+        <div class= "submission_title2">
             <h1> Submissions </h1>
+        </div>
         </div>
         {% for submission in submissions %}
             {% ifequal submission.story.pk story.pk %}

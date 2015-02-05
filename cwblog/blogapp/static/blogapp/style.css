@@ -63,10 +63,13 @@ header, .full-width {
 	margin-top: -.5em;
 }
 
+.story_box {
+	margin-left: 50%;
+}
 
 
 .body {
-	margin-left: 17em;
+	margin-left: -17.5em;
 	width: 34em;
 	padding-left: .5em;
 	padding-right: .5em;
@@ -102,7 +105,7 @@ header, .full-width {
 
 .submissions {
 
-	margin-left: 27em;
+	margin-left: 50%;
 
 }
 
@@ -110,8 +113,8 @@ header, .full-width {
 	position: relative;
 	border: solid;
 	border-width: 1px;
-	width: 25em;
-	margin-left: -6.5em;
+	width: 40em;
+	margin-left: -21em;
 	word-wrap: break-word;
 	padding-left: 1em;
 	padding-right: 1em;
@@ -121,10 +124,13 @@ header, .full-width {
 
 .submission_title {
 	font-size: 12px;
-	margin-left: 4.8em;
 	margin-bottom: -.5em;
+	margin-left: 45%;
 }
 
+.submission_title2 {
+	margin-left: -26em;
+}
 .text {
 	text-align: center;
 }
@@ -179,7 +185,12 @@ header, .full-width {
 
 .add_submission {
 	padding-bottom: 1em;
-	margin-left: 27em;
+	margin-left: 50%;
+
+}
+
+.text_box {
+	margin-left: -9em;
 }
 
 .submission_entry {
