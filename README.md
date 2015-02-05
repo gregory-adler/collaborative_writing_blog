@@ -1,7 +1,8 @@
 # collaborative_writing_blog
 
-About:
-    Collaborative writing blog--- short stories are written collaboratively by users through a votiing system. Sentences are added one at a time every 30 minutes. 
+ABOUT
+
+    Collaborative writing blog -- users write short stories together line by line. Users make submissions and vote which submission should be added to the story. The first submission to reach +10 likes is added to the story.
 
 DEVELOPED
   
